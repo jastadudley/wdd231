@@ -75,3 +75,8 @@ body {
     background-color: #0066cc;
     color: white;
   }
+  .completed {
+    background-color: #e6ffe6;
+    border-left: 5px solid #28a745;
+    padding: 0.5rem;
+  }
