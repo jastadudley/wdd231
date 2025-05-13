@@ -20,6 +20,12 @@ body {
     object-fit: cover;
   }
 
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
   nav {
     flex-grow: 1;
     margin-left: 2rem;
