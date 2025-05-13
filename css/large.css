@@ -10,3 +10,15 @@ nav ul {
     padding: 1rem;
     border-radius: 0.5rem;
   }
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  
+  #courses {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }

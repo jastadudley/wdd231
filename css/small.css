@@ -80,3 +80,24 @@ body {
     border-left: 5px solid #28a745;
     padding: 0.5rem;
   }
+  .content-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .info, .certificate {
+    width: 100%;
+  }
+
+  .course-card {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .completed {
+    background-color: #e6ffe6;
+    border-left: 5px solid #28a745;
+  }
