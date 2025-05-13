@@ -1,3 +1,6 @@
+console.log("Hello from courseDisplay.js!");
+
+
 function renderCourses(courseArray) {
     const courseContainer = document.getElementById("courses");
     courseContainer.innerHTML = "";
