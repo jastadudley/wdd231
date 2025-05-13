@@ -1,0 +1,12 @@
+nav ul {
+    display: flex;
+  }
+
+nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
