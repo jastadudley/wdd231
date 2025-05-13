@@ -49,10 +49,6 @@ body {
     text-decoration: underline;
   }
   
-  main {
-    max-width: 600px;
-  }
-  
   footer {
     margin-top: 2rem;
     font-size: 0.9rem;
