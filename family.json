@@ -1,0 +1,21 @@
+{
+    "familyName": "Dudley",
+    "movedIn": "2024-03-15",
+    "members": [
+      {
+        "name": "Jasta",
+        "age": 25,
+        "role": "Parent"
+      },
+      {
+        "name": "Axel",
+        "age": 27,
+        "role": "Parent"
+      },
+      {
+        "name": "Samson Rhysand Axel Mellado-Dudley",
+        "age": 5,
+        "role": "Child"
+      }
+    ]
+  }
