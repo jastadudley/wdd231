@@ -6,3 +6,10 @@ yearSpan.textContent = currentYear;
 
 const lastModified = document.querySelector('#lastModified');
 lastModified.textContent = `Last Modified: ${document.lastModified}`;
+
+const menuButton = document.getElementById("menu-button");
+const nav = document.querySelector("nav");
+
+menuButton.addEventListener("click", () => {
+  nav.classList.toggle("show");
+});

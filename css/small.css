@@ -26,6 +26,22 @@ body {
     gap: 1rem;
   }
 
+  #menu-button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    display: block;
+  }
+  
+  nav ul {
+    display: none;
+  }
+  
+  nav.show ul {
+    display: flex;
+  }
+  
   nav {
     flex-grow: 1;
     margin-left: 2rem;
