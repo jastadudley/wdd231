@@ -60,6 +60,17 @@ body {
   nav a:hover {
     text-decoration: underline;
   }
+
+  nav.show {
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 1000;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
   
   footer {
     margin-top: 2rem;
