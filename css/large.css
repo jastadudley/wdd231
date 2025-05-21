@@ -12,15 +12,14 @@ nav ul {
   }
   
   #courses {
+    min-height: 500px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    min-height: 500px;
-    transition: all 0.3s ease-in-out;
   }
   
   .certificate {
-    height: 700px;
+    height: auto;
   }
   
   .course-card {

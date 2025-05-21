@@ -83,6 +83,7 @@ body {
     background-color: #00334e;
     font-size: 0.9rem;
     color: #ccc;
+    grid-column: 1 / -1;
   }
 
   footer p {
