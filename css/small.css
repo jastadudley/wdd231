@@ -72,10 +72,21 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
+  main {
+    padding-top: 1rem;
+  }
+
   footer {
+    text-align: center;
     margin-top: 2rem;
+    padding: 1rem;
+    background-color: #00334e;
     font-size: 0.9rem;
-    color: #666;
+    color: #ccc;
+  }
+
+  footer p {
+    margin: 0.25rem 0;
   }
 
   nav a {

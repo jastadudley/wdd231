@@ -10,14 +10,6 @@ nav ul {
     padding: 1rem;
     border-radius: 0.5rem;
   }
-  .content-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: start;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
   
   #courses {
     display: flex;
@@ -38,6 +30,20 @@ nav ul {
   .filter-buttons {
     height: 40px;
     margin-bottom: 1rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+  }
+  
+  .info,
+  .certificate {
+    width: 100%;
   }
   
   /* ========== Prophet Cards Styles ========== */
