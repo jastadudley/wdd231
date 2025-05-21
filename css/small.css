@@ -33,15 +33,7 @@ body {
     cursor: pointer;
     display: block;
   }
-  
-  nav ul {
-    display: none;
-  }
-  
-  nav.show ul {
-    display: flex;
-  }
-  
+
   nav {
     flex-grow: 1;
     margin-left: 2rem;
@@ -50,10 +42,14 @@ body {
   nav ul {
     list-style: none;
     padding: 0;
-    display: flex;
+    margin: 1rem 0;
     flex-direction: column;
     gap: 0.5rem;
-    margin: 1rem 0;
+    display: none;
+  }
+
+  nav.show ul {
+    display: flex;
   }
   
   nav a {
