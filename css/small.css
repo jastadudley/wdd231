@@ -1,157 +1,268 @@
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-    margin: 0;
-    padding: 1rem;
-    background-color: #ffffff;
-    color: #222;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-  }
-  
-  header img {
-    border-radius: 50%;
-    height: 100px;
-    width: 85px;
-    object-fit: cover;
-  }
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background-color: #ffffff;
+  color: #222;
+}
 
-  .profile {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
 
-  #menu-button {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    display: block;
-  }
 
-  nav {
-    flex-grow: 1;
-    margin-left: 2rem;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0;
-    flex-direction: column;
-    gap: 0.5rem;
-    display: none;
-  }
+/* Header & Banner */
+.site-header {
+  background-color: #00334e;
+  color: white;
+  padding-bottom: 0.25rem;
+}
 
-  nav.show ul {
-    display: flex;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #0066cc;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
 
-  nav.show {
-    width: 100%;
-    background-color: white;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    z-index: 1000;
-    padding: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  main {
-    padding-top: 1rem;
-  }
 
-  footer {
-    text-align: center;
-    margin-top: 2rem;
-    padding: 1rem;
-    background-color: #00334e;
-    font-size: 0.9rem;
-    color: #ccc;
-    grid-column: 1 / -1;
-  }
 
-  footer p {
-    margin: 0.25rem 0;
-  }
 
-  nav a {
-    text-decoration: none;
-    color: #0066cc;
-    padding: 0.5rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  nav a:hover {
-    background-color: #e0f0ff;
-  }
-  
-  nav a.active {
-    background-color: #0066cc;
-    color: white;
-  }
-  .completed {
-    background-color: #e6ffe6;
-    border-left: 5px solid #28a745;
-    padding: 0.5rem;
-  }
-  .content-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  
-  .info, .certificate {
-    width: 100%;
-  }
 
-  .course-card {
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-  }
-  
-  .completed {
-    background-color: #e6ffe6;
-    border-left: 5px solid #28a745;
-  }
 
-  /* ========== Prophet Cards Styles ========== */
-  .cards {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr;
-    margin: 2rem auto;
-  }
-  
-  .cards section {
-    background-color: #ffffff;
-    border-radius: 8px;
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .cards img {
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
-    margin-top: 1rem;
-  }
+/* Profile Info */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile img {
+  border-radius: 50%;
+  height: 100px;
+  width: 85px;
+  object-fit: cover;
+}
+
+.profile span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+
+#menu-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  display: block;
+}
+
+
+nav {
+  flex-grow: 1;
+  margin-left: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  flex-direction: column;
+  gap: 0.5rem;
+  display: none;
+}
+
+nav.show ul {
+  display: flex;
+}
+
+nav.show {
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  z-index: 1000;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: #0066cc;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #e0f0ff;
+}
+
+nav a.active {
+  background-color: #0066cc;
+  color: white;
+}
+
+
+main {
+  padding-top: 1rem;
+}
+
+.content-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.certificate {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.info {
+  width: 100%;
+}
+
+
+
+
+/* Cards */
+.course-card {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.completed {
+  background-color: #e6ffe6;
+  border-left: 5px solid #28a745;
+  padding: 0.5rem;
+}
+
+.cards-section {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.card h3 {
+  background-color: #00334e;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-top: 0;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+.card-title {
+  background-color: #00334e;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.card ul {
+  margin-top: 0.5rem;
+  padding-left: 1.25rem;
+  line-height: 1.6;
+}
+
+.card p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #444;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #00334e;
+  font-size: 0.9rem;
+  color: #ccc;
+  grid-column: 1 / -1;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+
+
+
+
+
+
+/* Prophet Cards */
+.cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  margin: 2rem auto;
+}
+
+.cards section {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.cards img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-buttons button:hover {
+  background-color: #555;
+}
+
+.filter-buttons button.active {
+  background-color: #800000;
+}

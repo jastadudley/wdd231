@@ -27,30 +27,17 @@ function renderCourses(courseArray) {
   courseContainer.appendChild(total);
 }
 
-function setupFilterButtons() {
-  const filters = ["All", "WDD", "CSE"];
-  const courseContainer = document.getElementById("courses");
-
-  const buttonContainer = document.createElement("div");
-  buttonContainer.classList.add("filter-buttons");
-
-  filters.forEach(filter => {
-    const btn = document.createElement("button");
-    btn.textContent = filter + " Courses";
-    btn.addEventListener("click", () => {
-      const filtered =
-        filter === "All"
-          ? courses
-          : courses.filter(c => c.category === filter);
+function setupHTMLFilterButtons() {
+  document.querySelectorAll(".filter-buttons button").forEach(button => {
+    button.addEventListener("click", () => {
+      const type = button.textContent.split(" ")[0];
+      const filtered = type === "All" ? courses : courses.filter(c => c.category === type);
       renderCourses(filtered);
     });
-    buttonContainer.appendChild(btn);
   });
-
-  courseContainer.before(buttonContainer);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  setupFilterButtons();
+  setupHTMLFilterButtons();
   renderCourses(courses);
 });

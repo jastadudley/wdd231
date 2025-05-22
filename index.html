@@ -26,15 +26,18 @@
     <script src="js/date.js" defer></script>
     <script src="js/course.js" defer></script>
     <script src="js/display.js" defer></script>
-</head>
+  </head>
 
-<body>
-    <header>
+  <body>
+    <header class="site-header">
+      <div class="banner">
         <div class="profile">
           <img src="images/profile.jpg" alt="Jasta Dudley" width="85" height="100" loading="lazy">
           <span>Jasta Dudley</span>
         </div>
         <button id="menu-button" aria-label="Toggle Navigation">☰</button>
+      </div>
+
         <nav>
           <ul>
             <li><a href="index.html" class="active">Home</a></li>
@@ -44,31 +47,52 @@
             <li><a href="https://www.linkedin.com/in/jasta-dudley-a7a16519a">LinkedIn</a></li>
           </ul>
         </nav>
-      </header>
+    </header>
     
-      <main>
-        <div class="info">
-          <h1>Home</h1>
-          <section>
-            <h2>Welcome</h2>
-            <p>Welcome to my virtual portfolio! This site highlights my web development work throughout the WDD231 course and beyond.</p>
-          </section>
-          <section>
-            <h2>About Me</h2>
-            <p>Hello! I'm Jasta Dudley, a passionate learner and aspiring web developer based in Arizona. I love spending time outdoors—whether it’s hiking, exploring nature, or staying active through exercise and travel. When I’m not on the move, you’ll find me reading and continuing to build my skills in software development..</p>
-            <p>So far, I’ve completed coursework in C#, JavaScript, and Python, with Python being my strongest language. I’m currently advancing my front-end development skills through WDD231, and I’m excited to showcase that growth through this portfolio</p>
-          </section>
-        </div>
-      
-        <section class="certificate">
-          <h2>Certificate</h2>
-          <div id="courses"></div>
+    <main>
+      <div class="info">
+        <h1>Home</h1>
+        <section>
+          <h2>Welcome</h2>
+          <p>Welcome to my virtual portfolio! This site highlights my web development work throughout the WDD231 course and beyond.</p>
         </section>
-      </main>
+        <section>
+          <h2>About Me</h2>
+          <p>Hello! I'm Jasta Dudley, a passionate learner and aspiring web developer based in Arizona. I love spending time outdoors—whether it’s hiking, exploring nature, or staying active through exercise and travel. When I’m not on the move, you’ll find me reading and continuing to build my skills in software development..</p>
+          <p>So far, I’ve completed coursework in C#, JavaScript, and Python, with Python being my strongest language. I’m currently advancing my front-end development skills through WDD231, and I’m excited to showcase that growth through this portfolio</p>
+        </section>
+      </div>
+      <div class="cards-section">
+        <section class="card">
+          <h3>Course Work</h3>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </section>
       
+        <section class="card">
+          <h3>Phoenix, Arizona</h3>
+          <img src="images/mountains.jpg" alt="Superstion Mountains">
+          <p>Superstionn Mountains</p>
+        </section>
+      </div>
+     
+      <section class="certificate">
+        <h2 class="card-title">Web and Computer Programming Certificate</h2>
+        <div class="filter-buttons">
+          <button onclick="filterCourses('all')">All Courses</button>
+          <button onclick="filterCourses('WDD')">WDD Courses</button>
+          <button onclick="filterCourses('CSE')">CSE Courses</button>
+        </div>
+        <div id="courses"></div>
+      </section>
+    </main>
+
     <footer>
         <p>&copy; <span id="year"></span> Jasta Dudley, Arizona</p>
         <p id="lastModified"></p>
     </footer>
-</body>
+  </body>
 </html>
