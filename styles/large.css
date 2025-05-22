@@ -41,6 +41,10 @@ nav ul {
   padding: 0 1rem;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 .filter-buttons {
   display: flex;
   justify-content: center;
