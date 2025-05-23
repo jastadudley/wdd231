@@ -1,0 +1,59 @@
+[
+    {
+      "name": "Sunset Bakery",
+      "address": "123 Main St, Phoenix, AZ",
+      "phone": "602-555-1234",
+      "website": "https://sunsetbakery.com",
+      "image": "images/sunset-bakery.jpg",
+      "membership": "Gold"
+    },
+    {
+      "name": "Cactus Tech",
+      "address": "456 Tech Way, Tempe, AZ",
+      "phone": "480-555-4567",
+      "website": "https://cactustech.io",
+      "image": "images/cactus-tech.jpg",
+      "membership": "Silver"
+    },
+    {
+      "name": "Mesa Fitness Club",
+      "address": "789 Fit Blvd, Mesa, AZ",
+      "phone": "480-555-7890",
+      "website": "https://mesafitness.com",
+      "image": "images/mesa-fitness.jpg",
+      "membership": "Bronze"
+    },
+    {
+      "name": "Valley Home Realty",
+      "address": "135 Home St, Chandler, AZ",
+      "phone": "480-555-2468",
+      "website": "https://valleyhomeaz.com",
+      "image": "images/valley-home.jpg",
+      "membership": "Gold"
+    },
+    {
+      "name": "AZ Coffee Co.",
+      "address": "246 Java Rd, Scottsdale, AZ",
+      "phone": "602-555-3690",
+      "website": "https://azcoffeeco.com",
+      "image": "images/az-coffee.jpg",
+      "membership": "Silver"
+    },
+    {
+      "name": "Desert Bloom Florist",
+      "address": "357 Petal Pl, Gilbert, AZ",
+      "phone": "480-555-7531",
+      "website": "https://desertbloomflorist.com",
+      "image": "images/desert-bloom.jpg",
+      "membership": "Gold"
+    },
+    {
+      "name": "Green Earth Landscaping",
+      "address": "468 Garden Ln, Peoria, AZ",
+      "phone": "623-555-8520",
+      "website": "https://greenearthaz.com",
+      "image": "images/green-earth.jpg",
+      "membership": "Bronze"
+    }
+  ]
+  
