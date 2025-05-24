@@ -3,57 +3,64 @@
       "name": "Sunset Bakery",
       "address": "123 Main St, Phoenix, AZ",
       "phone": "602-555-1234",
-      "website": "https://sunsetbakery.com",
-      "image": "images/sunset-bakery.jpg",
-      "membership": "Gold"
+      "website": "https://sunset-bakery.com",
+      "image": "sunset-bakery.jpg",
+      "membership": "Gold",
+      "email": "info@sunsetbakery.com"
     },
     {
       "name": "Cactus Tech",
       "address": "456 Tech Way, Tempe, AZ",
       "phone": "480-555-4567",
       "website": "https://cactustech.io",
-      "image": "images/cactus-tech.jpg",
-      "membership": "Silver"
+      "image": "cactus-tech.jpg",
+      "membership": "Silver",
+      "email": "contact@cactustech.com"
     },
     {
       "name": "Mesa Fitness Club",
       "address": "789 Fit Blvd, Mesa, AZ",
       "phone": "480-555-7890",
       "website": "https://mesafitness.com",
-      "image": "images/mesa-fitness.jpg",
-      "membership": "Bronze"
+      "image": "mesa-fitness.jpg",
+      "membership": "Bronze",
+      "email": "dreambody@mesafitnessclub.com"
     },
     {
       "name": "Valley Home Realty",
       "address": "135 Home St, Chandler, AZ",
       "phone": "480-555-2468",
       "website": "https://valleyhomeaz.com",
-      "image": "images/valley-home.jpg",
-      "membership": "Gold"
+      "image": "valley-home.jpg",
+      "membership": "Gold",
+      "email": "info@valleyhome.com"
     },
     {
       "name": "AZ Coffee Co.",
       "address": "246 Java Rd, Scottsdale, AZ",
       "phone": "602-555-3690",
       "website": "https://azcoffeeco.com",
-      "image": "images/az-coffee.jpg",
-      "membership": "Silver"
+      "image": "az-coffee.jpg",
+      "membership": "Silver",
+      "email": "drinkwithus@azcoffeeco.com"
     },
     {
       "name": "Desert Bloom Florist",
       "address": "357 Petal Pl, Gilbert, AZ",
       "phone": "480-555-7531",
       "website": "https://desertbloomflorist.com",
-      "image": "images/desert-bloom.jpg",
-      "membership": "Gold"
+      "image": "desert-bloom.jpg",
+      "membership": "Gold",
+      "email": "bloom@dbfloreist.com"
     },
     {
       "name": "Green Earth Landscaping",
       "address": "468 Garden Ln, Peoria, AZ",
       "phone": "623-555-8520",
       "website": "https://greenearthaz.com",
-      "image": "images/green-earth.jpg",
-      "membership": "Bronze"
+      "image": "green-earth.jpg",
+      "membership": "Bronze",
+      "email": "greenlawn@gel.com"
     }
   ]
   

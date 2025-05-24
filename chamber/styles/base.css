@@ -172,12 +172,12 @@ body {
     padding: 0 1rem;
   }
   
-  /* Individual card styling */
+  
   .cards section {
     background-color: #ffffff;
     border-radius: 8px;
     padding: 1rem;
-    box-shadow: 0 0 10px rgba(0, 51, 78, 0.1); /* pulls that navy color in softly */
+    box-shadow: 0 0 10px rgba(0, 51, 78, 0.1);
     text-align: center;
     transition: transform 0.2s;
   }
@@ -186,7 +186,6 @@ body {
     transform: scale(1.02);
   }
   
-  /* Images */
   .cards img {
     width: 100%;
     height: auto;
@@ -195,7 +194,6 @@ body {
     object-fit: cover;
   }
   
-  /* Text styling */
   .cards h3 {
     margin: 0.5rem 0;
     font-size: 1.1rem;
@@ -206,10 +204,28 @@ body {
     font-size: 0.9rem;
     color: #333;
     margin: 0.25rem 0;
+    margin: 0.3rem 0;
+    line-height: 1.4;
+  }
+  .cards section[data-membership="Gold"] {
+    border-left: 5px solid gold;
+  }
+  .cards section[data-membership="Silver"] {
+    border-left: 5px solid silver;
+  }
+  .cards section[data-membership="Bronze"] {
+    border-left: 5px solid #cd7f32;
+  }
+  .cards img {
+    width: 220px;
+    height: 100px;
+    object-fit: cover;
+    margin: 1rem auto;
+    display: block;
+    border-radius: 6px;
   }
 
-  
-  
+
 
 
 
