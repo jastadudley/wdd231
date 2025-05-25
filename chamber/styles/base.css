@@ -270,11 +270,14 @@ main {
 
 .cards.list div {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 6rem;
   flex: 1;
-  flex-direction: column;
-  min-width: 200px;
-  padding: 0 1rem;
+  flex-wrap: wrap;
+  width: 100%;
 }
+
 
 .cards.list strong {
   color: #00334e;
@@ -283,6 +286,7 @@ main {
   color: #0066cc;
   text-decoration: underline;
 }
+
 
 
 
