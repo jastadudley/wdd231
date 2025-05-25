@@ -2,20 +2,24 @@ const url = 'members.json';
 const cards = document.querySelector('.cards');
 
 async function getMembers() {
-  const response = await fetch(url);
-  const data = await response.json();
-  displayMembers(data);
+  try {
+    const response = await fetch('members.json');
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+    const data = await response.json();
+    console.log("Fetched member data:", data);
+    displayMembers(data);
+  } catch (error) {
+    console.error("Could not load members.json:", error);
+  }
 }
 
 function displayMembers(members) {
   members.forEach(member => {
     const card = document.createElement('section');
-    
+    const content = document.createElement('div');
+
     const h3 = document.createElement('h3');
     h3.textContent = member.name;
-
-    const pTagline = document.createElement('p');
-    pTagline.textContent = member.tagline;
 
     const pEmail = document.createElement('p');
     pEmail.innerHTML = `<strong>Email:</strong> <a href="mailto:${member.email}">${member.email}</a>`;
@@ -31,15 +35,42 @@ function displayMembers(members) {
     img.alt = `Logo for ${member.name}`;
     img.loading = 'lazy';
 
-    card.appendChild(h3);
-    card.appendChild(pTagline);
+    content.appendChild(h3);
+    content.appendChild(pEmail);
+    content.appendChild(pPhone);
+    content.appendChild(pURL);
+    
     card.appendChild(img);
-    card.appendChild(pEmail);
-    card.appendChild(pPhone);
-    card.appendChild(pURL);
+    card.appendChild(content);
 
     cards.appendChild(card);
   });
 }
 
 getMembers();
+
+
+
+/*Toggle logic*/
+const gridBtn = document.getElementById('gridBtn');
+const listBtn = document.getElementById('listBtn');
+
+gridBtn.addEventListener('click', () => {
+  cards.classList.remove('list');
+  cards.classList.add('grid');
+});
+
+listBtn.addEventListener('click', () => {
+  cards.classList.remove('grid');
+  cards.classList.add('list');
+});
+
+
+
+/*hamburger menu*/
+const menuButton = document.getElementById('menu-button');
+const navMenu = document.querySelector('nav');
+
+menuButton.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
+});
