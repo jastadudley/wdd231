@@ -166,14 +166,21 @@ main {
 }
 
 /* Cards*/
+
 .cards {
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
   width: 100%;
-  max-width: 600px;
   box-sizing: border-box;
 }
+
+.cards.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
 
 .cards section {
   background-color: #ffffff;
@@ -228,21 +235,28 @@ main {
 }
 
 /* List View  */
-.cards.list {
-  display: block;
-}
-
 .cards.list section {
   display: flex;
-  align-items: center;
-  text-align: left;
-  flex-wrap: wrap;
-  gap: 2rem;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
   border-bottom: 1px solid #ccc;
   background-color: #f9f9f9;
   font-size: 0.95rem;
-  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.cards.list section:nth-child(even) {
+  background-color: #f0f8ff;
+}
+
+.cards.list img {
+  display: none;
+}
+
+.cards.list section:hover {
+  background-color: #e8f4ff;
 }
 
 .cards.list img {
@@ -269,6 +283,9 @@ main {
   color: #0066cc;
   text-decoration: underline;
 }
+
+
+
 
 /* Footer */
 footer {
