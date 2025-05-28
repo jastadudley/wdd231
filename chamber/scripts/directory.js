@@ -13,7 +13,7 @@ async function getMembers() {
 }
 
 function displayMembers(members) {
-  const fragment = document.createDocumentFragment(); // Batch DOM updates
+  const fragment = document.createDocumentFragment(); 
 
   members.forEach(member => {
     const card = document.createElement('section');
@@ -45,7 +45,7 @@ function displayMembers(members) {
     fragment.appendChild(card);
   });
 
-  cards.appendChild(fragment); // Add all cards at once
+  cards.appendChild(fragment);
 }
 
 getMembers();
