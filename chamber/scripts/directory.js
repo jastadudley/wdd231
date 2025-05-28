@@ -34,6 +34,8 @@ function displayMembers(members) {
     img.src = `images/${member.image}`;
     img.alt = `Logo for ${member.name}`;
     img.loading = 'lazy';
+    img.width = 220;
+    img.height = 100;
 
     content.appendChild(h3);
     content.appendChild(pEmail);

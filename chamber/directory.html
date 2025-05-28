@@ -17,7 +17,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" >
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
+  <link rel="preload" as="image" href="images/profile.jpg">
+  <link rel="preload" as="image" href="https://jastadudley.github.io/wdd231/images/mountains.jpg">
   <link rel="stylesheet" href="styles/base.css" >
   <link rel="icon" href="images/favicon.ico">
 
@@ -46,10 +47,10 @@
 
   <main>
     <h1>Chamber of Commerce Directory</h1>
-    <div class="view-toggle">
+    <nav aria-label="View options" class="view-toggle">
       <button id="gridBtn">🔳 Grid</button>
       <button id="listBtn">📃 List</button>
-    </div>
+    </nav>    
 
     <div class="cards grid"></div>
   </main>
