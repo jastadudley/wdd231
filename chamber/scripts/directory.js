@@ -3,10 +3,9 @@ const cards = document.querySelector('.cards');
 
 async function getMembers() {
   try {
-    const response = await fetch('members.json');
+    const response = await fetch(url);
     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
     const data = await response.json();
-    console.log("Fetched member data:", data);
     displayMembers(data);
   } catch (error) {
     console.error("Could not load members.json:", error);
@@ -14,6 +13,8 @@ async function getMembers() {
 }
 
 function displayMembers(members) {
+  const fragment = document.createDocumentFragment(); // Batch DOM updates
+
   members.forEach(member => {
     const card = document.createElement('section');
     const content = document.createElement('div');
@@ -31,29 +32,25 @@ function displayMembers(members) {
     pURL.innerHTML = `<strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a>`;
 
     const img = document.createElement('img');
-    img.src = `images/${member.image}`;
-    img.alt = `Logo for ${member.name}`;
-    img.loading = 'lazy';
-    img.width = 220;
-    img.height = 100;
+    Object.assign(img, {
+      src: `images/${member.image}`,
+      alt: `Logo for ${member.name}`,
+      loading: 'lazy',
+      width: 220,
+      height: 100
+    });
 
-    content.appendChild(h3);
-    content.appendChild(pEmail);
-    content.appendChild(pPhone);
-    content.appendChild(pURL);
-    
-    card.appendChild(img);
-    card.appendChild(content);
-
-    cards.appendChild(card);
+    content.append(h3, pEmail, pPhone, pURL);
+    card.append(img, content);
+    fragment.appendChild(card);
   });
+
+  cards.appendChild(fragment); // Add all cards at once
 }
 
 getMembers();
 
-
-
-/*Toggle logic*/
+/* Toggle logic */
 const gridBtn = document.getElementById('gridBtn');
 const listBtn = document.getElementById('listBtn');
 
@@ -67,9 +64,7 @@ listBtn.addEventListener('click', () => {
   cards.classList.add('list');
 });
 
-
-
-/*hamburger menu*/
+/* Hamburger menu */
 const menuButton = document.getElementById('menu-button');
 const navMenu = document.querySelector('nav');
 
