@@ -1,7 +1,7 @@
 import byuCourse from "./courses.mjs";
 
 
-export function setSectionSelection(sections) {
+export function setSectionSelection() {
     const sectionSelect = document.querySelector("#sectionNumber");
     byuCourse.sections.forEach((section) => {
       const option = document.createElement("option");

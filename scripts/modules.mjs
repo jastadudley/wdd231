@@ -13,5 +13,5 @@ document.querySelector("#dropStudent").addEventListener("click", () => {
 });
 
 setTitle(byuCourse);
-setSectionSelection(byuCourse.sections);
+setSectionSelection();
 renderSections(byuCourse.sections);
