@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 2rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  figure {
+    margin: 1rem auto;
+  }
+  
+  #weather-icon {
+    width: 100px;
+    height: auto;
+  }
+  
+  figcaption {
+    font-style: italic;
+    margin-top: 0.5rem;
+  }
+  
+  footer {
+    margin-top: 2rem;
+    font-size: 0.85rem;
+  }
+  
