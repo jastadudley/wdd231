@@ -128,6 +128,102 @@ main {
 
 
 
+
+
+
+
+
+/* Commerce page and hero image*/
+/*current events*/
+.content-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.current-events {
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #f2f2f2;
+  border-radius: 0.5rem;
+  max-width: 800px;
+}
+.current-events h2 {
+  text-align: center;
+  color: #333;
+}
+.current-events ul {
+  list-style: square;
+  padding-left: 1.5rem;
+}
+
+/*hero image index*/
+.responsive-hero {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.hero {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+}
+.cta-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #0077cc;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.cta-button:hover {
+  background-color: #005fa3;
+  transform: translate(-50%, -50%) scale(1.05);
+  transition: all 0.3s ease;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.current-events,
+.weather-card {
+  flex: 1 1 300px;
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.weather-card h2 {
+  text-align: center;
+  color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* Cards */
 .course-card {
   padding: 1rem;
