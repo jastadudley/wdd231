@@ -112,3 +112,165 @@ main {
   margin-left: auto;
   margin-right: auto;
 }
+
+
+
+
+
+
+
+/* ====== Commerce Page Specific ======*/
+
+body.commerce .current-events,
+body.commerce .weather-card {
+  flex: 1 1 45%;
+  min-width: 300px;
+  max-width: 48%;
+  box-sizing: border-box;
+}
+body.commerce main {
+  padding: 0;
+}
+body.commerce main > .hero {
+  width: 100vw;
+}
+body.commerce .current-events {
+  grid-column: span 2;
+}
+
+
+body.commerce .hero {
+  position: relative;
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body.commerce .responsive-hero {
+  width: 100vw;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+body.commerce .card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  align-items: stretch;
+}
+
+
+body.commerce .current-events,
+body.commerce .weather-card,
+body.commerce .forecast-card {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%; /* fill the row */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body.commerce .weather-card {
+  grid-column: span 1;
+}
+
+body.commerce .forecast-card {
+  grid-column: span 1;
+}
+
+
+
+body.commerce .hero {
+  position: relative;
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+body.commerce .cta-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #0077cc;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+body.commerce .cta-button:hover {
+  background-color: #005fa3;
+  transform: translate(-50%, -50%) scale(1.05);
+  transition: all 0.3s ease;
+}
+body.commerce .cta-button:hover {
+  box-shadow: 0 0 15px rgba(0, 119, 204, 0.6);
+}
+
+
+/*======Hover effect=====*/
+body.commerce .cta-button:hover {
+  background-color: #005fa3;
+  transform: translate(-50%, -50%) scale(1.05);
+  transition: all 0.3s ease;
+}
+body.commerce .current-events:hover,
+body.commerce .weather-card:hover,
+body.commerce .forecast-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/*featured businesses*/
+body.commerce .featured-business {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+body.commerce .spotlight-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+body.commerce .spotlight {
+  flex: 1 1 calc(33% - 2rem);
+  background-color: #f2f2f2;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+body.commerce .spotlight {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex: 1 1 calc(33% - 1rem);
+  min-width: 250px;
+  max-width: 31%;
+}
+body.commerce .featured-business h2 {
+  text-align: center;
+}
+
+

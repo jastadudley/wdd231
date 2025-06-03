@@ -71,3 +71,47 @@ const navMenu = document.querySelector('nav');
 menuButton.addEventListener('click', () => {
   navMenu.classList.toggle('show');
 });
+
+
+
+
+
+
+// === Chamber featured businesses ===
+if (document.querySelector('.featured-business')) {
+  const spotlightContainer = document.querySelector('.spotlight-container');
+
+  async function loadBusinesses() {
+    const response = await fetch('../members.json');
+    const data = await response.json();
+    const businesses = data;
+    console.log("📦 Loading featured businesses...");//troublshooting
+    const data = await response.json();
+    console.log("Data fetched ✅", data);
+    
+
+    const qualified = businesses.filter(b =>
+      b.membership === 'Gold' || b.membership === 'Silver'
+    );
+
+    const randomBusinesses = qualified
+      .sort(() => 0.5 - Math.random())
+      .slice(0, 3);
+
+    randomBusinesses.forEach(biz => {
+      const card = document.createElement('div');
+      card.classList.add('spotlight');
+      card.innerHTML = `
+        <h3>${biz.name}</h3>
+        <img src="images/${biz.image}" alt="${biz.name} logo" loading="lazy">
+        <p>${biz.address}</p>
+        <p><a href="${biz.website}" target="_blank">${biz.website}</a></p>
+        <p><strong>${biz.membership} Member</strong></p>
+      `;
+      spotlightContainer.appendChild(card);
+    });
+  }
+
+  loadBusinesses();
+}
+

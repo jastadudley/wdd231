@@ -25,14 +25,15 @@
     
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/small.css">
-    <link rel="stylesheet" href="../styles/large.css" media="screen and (min-width: 640px)">
+    <link rel="stylesheet" href="../styles/large.css" media="screen and (min-width: 640px)">    
     <link rel="icon" href="images/favicon.ico">
     <script src="../scripts/date.js" defer></script>
     <script src="../scripts/course.js" defer></script>
     <script src="../scripts/display.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
   </head>
 
-  <body>
+  <body class="commerce">
     <header class="site-header">
       <div class="banner">
         <div class="profile">
@@ -53,28 +54,50 @@
         </nav>
     </header>
     
+    <section class="hero">
+      <img src="images/hero.jpg" alt="Welcome to our Chamber" class="responsive-hero">
+      <a href="###" class="cta-button">Join our Chamber!</a>
+    </section>
+  
     <main>
-        <section class="hero">
-          <img src="images/hero.jpg" alt="Welcome to [Chamber Name]" class="responsive-hero">
-          <a href="join.html" class="cta-button">Join our Chamber!</a>
-        </section>
-      
         <div class="card-container">
-          <section class="current-events">
-            <h2>Current Events</h2>
-            <ul>
-              <li>Local Business Expo – June 15th, Downtown Plaza</li>
-              <li>Summer Networking Luncheon – June 22nd at Noon</li>
-              <li>Chamber Monthly Meeting – July 3rd, 6:00 PM</li>
-            </ul>
-          </section>
-      
-          <section class="weather-card">
-            <h2>Weather</h2>
-            <p>Placeholder</p>
-          </section>
+            <section class="current-events">
+              <h2>Current Events</h2>
+              <ul>
+                <li>Local Business Expo – June 15th, Downtown Plaza</li>
+                <li>Summer Networking Luncheon – June 22nd at Noon</li>
+                <li>Chamber Monthly Meeting – July 3rd, 6:00 PM</li>
+              </ul>
+            </section>
+
+            <section class="weather-card">
+                <h2>Current Weather</h2>
+                <h3>Current temperature in Trier, Germany is <span id="current-temp"></span>°F</h3>
+                <figure>
+                <img id="weather-icon" src="" alt="" >
+                <figcaption id="caption-desc"></figcaption>
+                </figure>
+                <footer>
+                <p>
+                Weather data provided by
+                <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap.org</a>
+                </p>
+                 </footer>
+            </section>
+
+            <section class="forecast-card">
+                <h2>Weather Forcast</h2>
+                <p>Placeholder</p>
+            </section>
         </div>
-      </main>
+
+        <div class="featured-business">
+            <h2>Featured Businesses</h2>
+            <div class="spotlight-container"></div>
+        </div>
+    </main>
+   
+   
 
     <footer>
         <p>&copy; <span id="year"></span> Jasta Dudley, Arizona</p>
