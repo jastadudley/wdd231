@@ -135,7 +135,10 @@ body.commerce main > .hero {
   width: 100vw;
 }
 body.commerce .current-events {
-  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-column: span 4;
 }
 
 
@@ -179,12 +182,9 @@ body.commerce .forecast-card {
   justify-content: space-between;
 }
 
-body.commerce .weather-card {
-  grid-column: span 1;
-}
-
+body.commerce .weather-card,
 body.commerce .forecast-card {
-  grid-column: span 1;
+  grid-column: span 2;
 }
 
 
@@ -272,5 +272,7 @@ body.commerce .spotlight {
 body.commerce .featured-business h2 {
   text-align: center;
 }
-
-
+body.commerce .spotlight-container {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}

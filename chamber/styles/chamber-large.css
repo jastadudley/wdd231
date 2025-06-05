@@ -1,0 +1,60 @@
+@media screen and (min-width: 640px) {
+    .card-container {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      align-items: stretch;
+    }
+  
+    .current-events {
+      grid-column: span 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .weather-card {
+      grid-column: span 1;
+    }
+  
+    .forecast-card {
+      grid-column: span 1;
+    }
+  
+    .spotlight-container {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      margin: 2rem auto;
+      max-width: 1200px;
+    }
+  
+    .spotlight {
+      flex: 1 1 calc(33.33% - 1rem);
+      max-width: 32%;
+    }
+}
+
+.featured-business {
+    text-align: center;
+}
+
+.current-events ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    line-height: 1.4;
+  } 
+  
+  
+/*Linked weather*/
+.weather-card a {
+    color: #a3cbe8;
+    text-decoration: underline;
+  }
+  
+  .weather-card a:hover {
+    color: #ffffff;
+  }  
