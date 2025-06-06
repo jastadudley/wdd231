@@ -23,6 +23,21 @@ function displayResults(data) {
   document.querySelector("#caption-desc").textContent = desc;
 }
 
+// style the weather box
+const sourceBox = document.createElement("div");
+sourceBox.classList.add("weather-source");
+
+const sourceLink = document.createElement("a");
+sourceLink.href = "https://openweathermap.org";
+sourceLink.target = "_blank";
+sourceLink.textContent = "OpenWeatherMap.org";
+
+sourceBox.appendChild(sourceLink);
+
+
+document.querySelector(".weather-card").appendChild(sourceBox);
+
+
 apiFetch();
 
 /* Three day forcast*/
@@ -53,13 +68,16 @@ async function fetchForecast() {
 
       const card = document.createElement('div');
       card.innerHTML = `
-        <h4>${weekday}</h4>
-        <img src="https://openweathermap.org/img/wn/${icon}.png" alt="${desc}" title="${desc}">
-        <p>${temp}°F</p>
+        <div class="forecast-day">
+          <div class="forecast-left">
+            <h4>${weekday}</h4>
+            <p>${temp}°F</p>
+          </div>
+          <img src="https://openweathermap.org/img/wn/${icon}.png" alt="${desc}" title="${desc}">
+        </div>
       `;
-
-      forecastContainer.appendChild(card);
-    });
+    forecastContainer.appendChild(card);
+  });
 
   } catch (error) {
     console.error("Forecast load error:", error);
