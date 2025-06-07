@@ -8,14 +8,14 @@
     
     <meta property="og:title" content="Jasta Dudley | Web Portfolio">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="images/profile.jpg">
-    <meta property="og:url" content="chamber/index.html">
+    <meta property="og:image" content="https://jastadudley.github.io/wdd231/chamber/images/profile.jpg">
+    <meta property="og:url" content="https://jastadudley.github.io/wdd231/chamber/index.html">
     <meta property="og:description" content="Explore the WDD231 portfolio of Jasta Dudley, featuring front-end web development projects.">
     
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Jasta Dudley | Web Portfolio">
     <meta name="twitter:description" content="Explore the WDD231 portfolio of Jasta Dudley, featuring front-end web development projects.">
-    <meta name="twitter:image" content="images/profile.jpg">
+    <meta name="twitter:image" content="https://jastadudley.github.io/wdd231/chamber/images/profile.jpg">
     
 
     <title>Course Discovery Page</title>
@@ -31,7 +31,8 @@
     <script src="../scripts/date.js" defer></script>
     <script src="../scripts/course.js" defer></script>
     <script src="scripts/spotlight.js" defer></script>
- </head>
+    <link rel="preload" as="image" href="images/hero.jpg">
+  </head>
 
   <body class="commerce">
     <header class="site-header">
@@ -55,10 +56,11 @@
         </nav>
     </header>
     
-    <section class="hero">
+    <section class="hero" aria-labelledby="hero-heading">
+      <h2 id="hero-heading" class="visually-hidden">Welcome Hero Banner</h2>
       <img src="images/hero.jpg" alt="Welcome to our Chamber" class="responsive-hero" loading="lazy">
       <div><a href="#join" class="cta-button">Join our Chamber!</a></div>
-    </section>    
+    </section>
   
     <main>
       <h1>Discover Our Chamber</h1>
