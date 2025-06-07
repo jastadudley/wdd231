@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-//Model
+//potentual Modal
+/*
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.querySelector(".join-form");
     const modal = document.getElementById("confirmationModal");
@@ -27,4 +28,4 @@ document.addEventListener("DOMContentLoaded", () => {
       form.reset(); 
     });
 });
-  
+*/
