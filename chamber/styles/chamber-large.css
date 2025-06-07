@@ -67,6 +67,33 @@
       display: none;
     }
 }
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+main h1 {
+    text-align: center;
+    margin-top: 2rem;
+}
+  
+  
+  
+
+.button-disabled {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #ccc;
+    color: #666;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: not-allowed;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    white-space: nowrap;
+}
+  
   
 .featured-business {
     text-align: center;
