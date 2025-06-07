@@ -1,0 +1,103 @@
+@media screen and (min-width: 640px) {
+    .card-container {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      align-items: stretch;
+    }
+  
+    .current-events {
+      grid-column: span 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .weather-card {
+      grid-column: span 1;
+    }
+  
+    .forecast-card {
+      grid-column: span 1;
+    }
+  
+    .spotlight-container {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      margin: 2rem auto;
+      max-width: 1200px;
+    }
+  
+    .spotlight {
+      flex: 1 1 calc(33.33% - 1rem);
+      max-width: 32%;
+    }
+}
+
+/*make sure nave menu in desktop*/
+@media screen and (min-width: 640px) {
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #f3f3f3;
+      padding: 0rem;
+      border-radius: 0.5rem;
+      width: 98%;
+      margin: 1rem auto 0 auto;
+    }
+  
+    nav ul {
+      display: flex !important;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: #f3f3f3;
+      padding: 1rem;
+      border-radius: 1.5rem;
+      margin: 0;
+      width: 100%;
+      max-width: 1200px;
+    }
+  
+    #menu-button {
+      display: none;
+    }
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+main h1 {
+    text-align: center;
+    margin-top: 2rem;
+}
+  
+  
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.button-disabled {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #ccc;
+    color: #666;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: not-allowed;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    white-space: nowrap;
+}
+  

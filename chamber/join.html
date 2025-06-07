@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Course Home Page for WDD231 Project">
+        <meta name="author" content="Jasta Dudley">
+    
+        <meta property="og:title" content="Jasta Dudley | Web Portfolio">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://jastadudley.github.io/wdd231/chamber/images/profile.jpg">
+        <meta property="og:url" content="https://jastadudley.github.io/wdd231/chamber/index.html">
+        <meta property="og:description" content="Explore the WDD231 portfolio of Jasta Dudley, featuring front-end web development projects.">
+    
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Jasta Dudley | Web Portfolio">
+        <meta name="twitter:description" content="Explore the WDD231 portfolio of Jasta Dudley, featuring front-end web development projects.">
+        <meta name="twitter:image" content="https://jastadudley.github.io/wdd231/chamber/images/profile.jpg">
+    
+
+        <title>Course Page To Join Chamber</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="styles/join-small.css">
+        <link rel="stylesheet" href="styles/join-large.css" media="screen and (min-width: 640px)">    
+        <link rel="icon" href="images/favicon.ico">
+        <script src="../scripts/date.js" defer></script>
+        <script src="../scripts/course.js" defer></script>
+        <link rel="preload" as="image" href="images/hero.jpg">
+    </head>
+
+    <body class="commerce">
+    <header class="site-header">
+        <div class="banner">
+            <div class="profile">
+            <img src="images/profile.jpg" alt="Jasta Dudley" width="85" height="100" loading="lazy">
+            <span>Jasta Dudley</span>
+            </div>
+            <button id="menu-button" aria-label="Toggle Navigation">☰</button>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="chamber/index.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="directory.html"  class="active">Join</a></li>
+                <li><span class="button-disabled">Final</span></li>
+                <li><a href="https://github.com/jastadudley">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/jasta-dudley-a7a16519a">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+   
+    <main>
+        <h1>Join Our Chamber of Commerce</h1>
+
+
+        <!--Application Info-->
+        <form action="thankyou.html" method="get" class="join-form">
+            <fieldset>
+                <legend>Applicant Information</legend>
+      
+                <label for="firstName">First Name:
+                <input type="text" id="firstName" name="firstName" required>
+                </label>
+      
+                <label for="lastName">Last Name:
+                <input type="text" id="lastName" name="lastName" required>
+                </label>
+      
+                <label for="title">Title/Position:
+                <input type="text" id="title" name="title" pattern="[A-Za-z\s\-]{7,}" required>
+                </label>
+      
+                <label for="email">Email:
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </label>
+      
+                <label for="phone">Phone:
+                <input type="tel" id="phone" name="phone" required>
+                </label>
+      
+                <label for="organization">Business/Organization:
+                <input type="text" id="organization" name="organization" required>
+                </label>
+            </fieldset>
+
+
+
+           <!--Membership levels-->
+            <fieldset>
+                <legend>Membership Level</legend>
+          
+                <label>
+                    <input type="radio" name="membership" value="np" required>
+                    NP (Non-Profit)
+                </label>
+          
+                <label>
+                    <input type="radio" name="membership" value="bronze">
+                    Bronze
+                </label>
+          
+                <label>
+                    <input type="radio" name="membership" value="silver">
+                    Silver
+                </label>
+          
+                <label>
+                    <input type="radio" name="membership" value="gold">
+                    Gold
+                </label>
+            </fieldset>
+
+           <!--Business Discription-->
+            <label for="description">Business Description:
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </label>
+            <input type="hidden" id="timestamp" name="timestamp">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Jasta Dudley, Arizona</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    
+    <script src="scripts/join.js" defer></script>
+</body>
+</html>
