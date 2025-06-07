@@ -100,4 +100,36 @@ main h1 {
     text-align: center;
     white-space: nowrap;
 }
+
+
+
+
+/*Join Form Styling*/
+@media screen and (min-width: 640px) {
+    .join-form input[type="submit"] {
+      grid-column: span 2;
+      justify-self: start;
+    }
+}
+  
+
+.join-form input[type="submit"] {
+    background-color: #0066cc;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+  
+.join-form input[type="submit"]:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px);
+}
+  
+  
   

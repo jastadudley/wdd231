@@ -170,7 +170,79 @@ main h1 {
 }
 
 
+/* === Join Form Styling === */
 
+form.join-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: #fefefe;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    max-width: 800px;
+    margin: 2rem auto;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  fieldset {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 6px;
+  }
+  
+  legend {
+    font-weight: bold;
+    padding: 0 0.5rem;
+  }
+  
+  label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 500;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  input[type="radio"] {
+    width: auto;
+    margin-right: 0.5rem;
+  }
+  
+  .join-form label input[type="radio"] {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  
+  .join-form input[type="submit"] {
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .join-form input[type="submit"]:hover {
+    background-color: #004999;
+  }
+  
 
 
 
