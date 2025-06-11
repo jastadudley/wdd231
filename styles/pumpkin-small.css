@@ -1,0 +1,37 @@
+
+
+
+
+
+
+
+
+/*Main page Carosel Scroll*/
+.award-carousel {
+    padding: 2rem;
+    background-color: #fff5e6;
+    text-align: center;
+  }
+  
+  .award-carousel h2 {
+    margin-bottom: 1rem;
+    font-family: 'Georgia', serif;
+    color: #5c3a1e;
+  }
+  
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    scroll-snap-type: x mandatory;
+    padding: 1rem 0;
+  }
+  
+  .carousel img {
+    height: 200px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
