@@ -1,0 +1,22 @@
+/* Main page and context */
+nav ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+  
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+  
+
+
+
+/*Carousel*/
+.carousel img {
+    height: 220px;
+}
+  

@@ -1,4 +1,176 @@
+/* Basic Styling*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+/* Base Styles */
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    background-color: #6a3e24;
+    color: #3b2e2c;
+    margin: 0;
+    padding: 0;
+}
+  
+/* Header & Banner */
+.banner-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.banner-title {
+    position: absolute;
+    top: 1rem;
+    left: 37%;
+    transform: translateX(-50%);
+    font-family: 'Dancing Script', cursive;
+    font-size: 6rem;
+    color: #fff8f1;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    z-index: 2;
+}
 
+.banner-container {
+    position: relative;
+}
+
+/*Transparent boarder fade to brown*/
+.banner-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 15px;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 248, 241, 0), #6a3e24); 
+}
+
+  
+
+  
+  
+/* Nav */
+nav {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    background-color: rgba(91, 60, 36, 0.8);
+    padding: 2rem 4rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    z-index: 3;
+    right: 18rem; 
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+  
+nav a {
+    color: #fff8f1;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+  
+nav a:hover {
+    color: #ffdbb5;
+    transform: scale(1.05);
+}
+
+
+
+/*Falling Leaf Animation*/
+@keyframes fall {
+    0% {
+      transform: translateY(-100px) rotate(0deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+      opacity: 6;
+    }
+}
+  
+.falling-leaf {
+    position: absolute;
+    top: 100px;
+    width: 40px;
+    height: auto;
+    animation: fall 25s linear infinite;
+    pointer-events: none;
+    z-index: 2;
+}
+
+  
+/* Intro & Sections */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: #fff8f1;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+ }
+  
+section {
+    margin-bottom: 2rem;
+}
+  
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #5c3a1e;
+}
+  
+p {
+    margin-bottom: 1rem;
+}
+  
+.cta-button {
+    display: block;
+    width: max-content;
+    margin: 2rem auto 1rem auto;
+    padding: 1rem 4rem;
+    background-color: #ffdbb5;
+    color: #5c3a1e;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+.cta-button:hover {
+    background-color: #ffc98b;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+  
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    scroll-snap-type: x mandatory;
+}
+  
+.carousel img {
+    height: 180px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 
 
@@ -11,27 +183,45 @@
     padding: 2rem;
     background-color: #fff5e6;
     text-align: center;
-  }
+}
   
-  .award-carousel h2 {
+.award-carousel h2 {
     margin-bottom: 1rem;
     font-family: 'Georgia', serif;
     color: #5c3a1e;
-  }
+}
   
-  .carousel {
+.carousel {
     display: flex;
     overflow-x: auto;
     gap: 1rem;
     scroll-snap-type: x mandatory;
     padding: 1rem 0;
-  }
+}
   
-  .carousel img {
+.carousel img {
     height: 200px;
     flex-shrink: 0;
     scroll-snap-align: center;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-  
+}
+.award-carousel {
+    background-color: #fff5e6;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+
+
+/* General Footer */
+footer {
+    background-color: #6a3e24;
+    color: #fff8f1;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+}
