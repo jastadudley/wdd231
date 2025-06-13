@@ -35,7 +35,6 @@ body.commerce .hero::after {
   width: 100%;
   height: 20px; 
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, #ffffff 90%);
-  pointer-events: none;
 }
   
 /* Profile Info */
@@ -92,7 +91,7 @@ nav ul {
 }
   
 nav.show ul {
-  display: flex; ///
+  display: flex;
 }
   
 nav.show {
@@ -463,7 +462,6 @@ form.join-form input[type="submit"]:hover {
   background-position: center;
   opacity: 0;
   z-index: 1;
-  pointer-events: none;
 }
 
 /* fireworks when selected */
