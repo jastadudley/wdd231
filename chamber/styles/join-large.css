@@ -102,8 +102,6 @@ main h1 {
 }
 
 
-
-
 /*Join Form Styling*/
 @media screen and (min-width: 640px) {
     .join-form input[type="submit"] {
@@ -131,5 +129,30 @@ main h1 {
     transform: translateY(-2px);
 }
   
-  
-  
+/* Large screen layout for form + cards */
+@media screen and (min-width: 768px) {
+  .join-wrapper {
+    display: flex;
+    flex-direction: row; /* <-- THIS is the missing magic */
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .join-form {
+    flex: 2;
+    max-width: 700px;
+  }  
+
+  .cards-section {
+    flex: 1;
+    max-width: 300px;
+  }
+  .application-section,
+  .cards-section {
+    flex: 1;
+  }
+}

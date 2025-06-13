@@ -5,6 +5,15 @@ document.addEventListener('DOMContentLoaded', () => {
     timestampField.value = now;
 });
 
+//Mobile Hamburger Menu
+document.addEventListener('DOMContentLoaded', () => {
+  const menuBtn = document.getElementById('menu-button');
+  const nav = document.querySelector('nav');
+  menuBtn.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+});
+
 
 //Model
 document.addEventListener('DOMContentLoaded', () => {

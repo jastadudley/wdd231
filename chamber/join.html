@@ -56,133 +56,115 @@
         </nav>
     </header>
     
-   
     <main>
         <h1>Join Our Chamber of Commerce</h1>
-
-
-        <!--Application Info-->
-        <form action="thankyou.html" method="get" class="join-form">
+      
+        <div class="join-wrapper">
+          <!--Application Info-->
+          <form action="thankyou.html" method="get" class="join-form">
+      
             <fieldset>
                 <legend>Applicant Information</legend>
-
-
-                <main class="membership-layout">
-                    <section class="application-section">
-                      
-                        <div class="form-group">
-                            <label for="firstName">First Name:</label>
-                            <input type="text" id="firstName" name="firstName" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="lastName">Last Name:</label>
-                            <input type="text" id="lastName" name="lastName" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="title">Title/Position:</label>
-                            <input type="text" id="title" name="title" pattern="[A-Za-z\s\-]{7,}" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">Phone:</label>
-                            <input type="tel" id="phone" name="phone" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="organization">Business/Organization:</label>
-                            <input type="text" id="organization" name="organization" required>
-                        </div>
-                        
-                    </section>
-                  
-                    
-                    <!--Membership info cards on the right-->
-                    <section class="cards-section">
-                        <div class="membership-card">
-                            <h3>Non-Profit Membership</h3>
-                            <button type="button" class="learn-more" data-modal="npModal">Learn More</button>
-                        </div>
-
-                        <div class="membership-card">
-                            <h3>Bronze Membership</h3>
-                            <button type="button" class="learn-more" data-modal="bronzeModal">Learn More</button>
-                        </div>
-
-                        <div class="membership-card">
-                            <h3>Silver Membership</h3>
-                            <button type="button" class="learn-more" data-modal="silverModal">Learn More</button>
-                        </div>
-
-                        <div class="membership-card">
-                            <h3>Gold Membership</h3>
-                            <button type="button" class="learn-more" data-modal="goldModal">Learn More</button>
-                        </div>
-                          
-                    </section>
-
-                </main>
-
+                <section class="application-section">
+      
+                  <div class="application-section">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                  </div>
+      
+                  <div class="application-section">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                  </div>
+      
+                  <div class="application-section">
+                    <label for="title">Title/Position:</label>
+                    <input type="text" id="title" name="title" pattern="[A-Za-z\s\-]{7,}" required>
+                  </div>
+      
+                  <div class="application-section">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                  </div>
+      
+                  <div class="application-section">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                  </div>
+      
+                  <div class="application-section">
+                    <label for="organization">Business/Organization:</label>
+                    <input type="text" id="organization" name="organization" required>
+                  </div>
+      
+                </section>
             </fieldset>
-              
-
-
-
-           <!--Membership levels-->
-           <fieldset class="membership-options">
-            <legend>Membership Level</legend>
-          
-            <label class="membership-option" data-color="np">
+      
+            <!--Membership levels-->
+            <fieldset class="membership-options">
+              <legend>Membership Level</legend>
+      
+              <label class="membership-option" data-color="np">
                 <input type="radio" name="membership" value="np" required>
                 <span class="option-label">Non-Profit</span>
                 <span class="fireworks"></span>
-            </label>
-              
-            <label class="membership-option" data-color="bronze">
+              </label>
+      
+              <label class="membership-option" data-color="bronze">
                 <input type="radio" name="membership" value="bronze">
                 <span class="option-label">Bronze</span>
                 <span class="fireworks"></span>
-            </label>
-              
-            <label class="membership-option" data-color="silver">
+              </label>
+      
+              <label class="membership-option" data-color="silver">
                 <input type="radio" name="membership" value="silver">
                 <span class="option-label">Silver</span>
                 <span class="fireworks"></span>
-            </label>
-              
-            <label class="membership-option" data-color="gold">
+              </label>
+      
+              <label class="membership-option" data-color="gold">
                 <input type="radio" name="membership" value="gold">
                 <span class="option-label">Gold</span>
                 <span class="fireworks"></span>
-            </label>
-
-          </fieldset>
-          
-          
-
-           <!--Business Discription-->
-           <fieldset>
-            <legend>Business Description</legend>
-            <div class="form-group">
-              <label for="description" class="visually-hidden">Business Description</label>
-              <textarea id="description" name="description" rows="4" required placeholder="Write your business description here..."></textarea>
-            </div>
-          </fieldset>
-          
-          
+              </label>
+      
+            </fieldset>
+      
+            <!--Business Description-->
+            <fieldset>
+              <legend>Business Description</legend>
+              <div class="form-group">
+                <label for="description" class="visually-hidden">Business Description</label>
+                <textarea id="description" name="description" rows="4" required placeholder="Write your business description here..."></textarea>
+              </div>
+            </fieldset>
+      
             <input type="hidden" id="timestamp" name="timestamp">
-
             <button type="submit">Submit Application</button>
-
-        </form>
-
-        <!-- Non-Profit Modal -->
+          </form>
+      
+          <!--Membership info cards on the right-->
+          <section class="cards-section">
+            <div class="membership-card">
+              <h3>Non-Profit Membership</h3>
+              <button type="button" class="learn-more" data-modal="npModal">Learn More</button>
+            </div>
+            <div class="membership-card">
+              <h3>Bronze Membership</h3>
+              <button type="button" class="learn-more" data-modal="bronzeModal">Learn More</button>
+            </div>
+            <div class="membership-card">
+              <h3>Silver Membership</h3>
+              <button type="button" class="learn-more" data-modal="silverModal">Learn More</button>
+            </div>
+            <div class="membership-card">
+              <h3>Gold Membership</h3>
+              <button type="button" class="learn-more" data-modal="goldModal">Learn More</button>
+            </div>
+          </section>
+        </div>
+      
+        <!-- Modals -->
         <div class="modal" id="npModal">
             <div class="modal-content">
                 <span class="close">&times;</span>
@@ -233,7 +215,6 @@
                 </ul>
             </div>
         </div>
-
     </main>
 
 
