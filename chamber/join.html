@@ -28,8 +28,8 @@
         <link rel="stylesheet" href="styles/join-small.css">
         <link rel="stylesheet" href="styles/join-large.css" media="screen and (min-width: 640px)">    
         <link rel="icon" href="images/favicon.ico">
-        <script src="../scripts/date.js" defer></script>
-        <script src="../scripts/course.js" defer></script>
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/join.js" defer></script>
         <link rel="preload" as="image" href="images/hero.jpg">
     </head>
 
@@ -49,7 +49,7 @@
                 <li><a href="index.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="directory.html"  class="active">Join</a></li>
-                <li><a href="pixel-pumpkin.html">Final</a></li>
+                <li><a href="../pixel-pumpkin.html">Final</a></li>
                 <li><a href="https://github.com/jastadudley">GitHub Profile</a></li>
                 <li><a href="https://www.linkedin.com/in/jasta-dudley-a7a16519a">LinkedIn</a></li>
             </ul>
@@ -65,78 +65,181 @@
         <form action="thankyou.html" method="get" class="join-form">
             <fieldset>
                 <legend>Applicant Information</legend>
-      
-                <label for="firstName">First Name:
-                <input type="text" id="firstName" name="firstName" required>
-                </label>
-      
-                <label for="lastName">Last Name:
-                <input type="text" id="lastName" name="lastName" required>
-                </label>
-      
-                <label for="title">Title/Position:
-                <input type="text" id="title" name="title" pattern="[A-Za-z\s\-]{7,}" required>
-                </label>
-      
-                <label for="email">Email:
-                <input type="email" id="email" name="email" placeholder="you@example.com" required>
-                </label>
-      
-                <label for="phone">Phone:
-                <input type="tel" id="phone" name="phone" required>
-                </label>
-      
-                <label for="organization">Business/Organization:
-                <input type="text" id="organization" name="organization" required>
-                </label>
+
+
+                <main class="membership-layout">
+                    <section class="application-section">
+                      
+                        <div class="form-group">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="title">Title/Position:</label>
+                            <input type="text" id="title" name="title" pattern="[A-Za-z\s\-]{7,}" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="organization">Business/Organization:</label>
+                            <input type="text" id="organization" name="organization" required>
+                        </div>
+                        
+                    </section>
+                  
+                    
+                    <!--Membership info cards on the right-->
+                    <section class="cards-section">
+                        <div class="membership-card">
+                            <h3>Non-Profit Membership</h3>
+                            <button type="button" class="learn-more" data-modal="npModal">Learn More</button>
+                        </div>
+
+                        <div class="membership-card">
+                            <h3>Bronze Membership</h3>
+                            <button type="button" class="learn-more" data-modal="bronzeModal">Learn More</button>
+                        </div>
+
+                        <div class="membership-card">
+                            <h3>Silver Membership</h3>
+                            <button type="button" class="learn-more" data-modal="silverModal">Learn More</button>
+                        </div>
+
+                        <div class="membership-card">
+                            <h3>Gold Membership</h3>
+                            <button type="button" class="learn-more" data-modal="goldModal">Learn More</button>
+                        </div>
+                          
+                    </section>
+
+                </main>
+
             </fieldset>
+              
 
 
 
            <!--Membership levels-->
-            <fieldset>
-                <legend>Membership Level</legend>
+           <fieldset class="membership-options">
+            <legend>Membership Level</legend>
           
-                <label>
-                    <input type="radio" name="membership" value="np" required>
-                    NP (Non-Profit)
-                </label>
+            <label class="membership-option" data-color="np">
+                <input type="radio" name="membership" value="np" required>
+                <span class="option-label">Non-Profit</span>
+                <span class="fireworks"></span>
+            </label>
+              
+            <label class="membership-option" data-color="bronze">
+                <input type="radio" name="membership" value="bronze">
+                <span class="option-label">Bronze</span>
+                <span class="fireworks"></span>
+            </label>
+              
+            <label class="membership-option" data-color="silver">
+                <input type="radio" name="membership" value="silver">
+                <span class="option-label">Silver</span>
+                <span class="fireworks"></span>
+            </label>
+              
+            <label class="membership-option" data-color="gold">
+                <input type="radio" name="membership" value="gold">
+                <span class="option-label">Gold</span>
+                <span class="fireworks"></span>
+            </label>
+
+          </fieldset>
           
-                <label>
-                    <input type="radio" name="membership" value="bronze">
-                    Bronze
-                </label>
           
-                <label>
-                    <input type="radio" name="membership" value="silver">
-                    Silver
-                </label>
-          
-                <label>
-                    <input type="radio" name="membership" value="gold">
-                    Gold
-                </label>
-            </fieldset>
 
            <!--Business Discription-->
-            <label for="description">Business Description:
-                <textarea id="description" name="description" rows="4" required></textarea>
-            </label>
+           <fieldset>
+            <legend>Business Description</legend>
+            <div class="form-group">
+              <label for="description" class="visually-hidden">Business Description</label>
+              <textarea id="description" name="description" rows="4" required placeholder="Write your business description here..."></textarea>
+            </div>
+          </fieldset>
+          
+          
             <input type="hidden" id="timestamp" name="timestamp">
 
             <button type="submit">Submit Application</button>
 
         </form>
 
-       
+        <!-- Non-Profit Modal -->
+        <div class="modal" id="npModal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h4>Non-Profit Membership Benefits  --  $25 A Month</h4>
+                <ul>
+                    <li>Free workshops</li>
+                    <li>Community events</li>
+                    <li>Basic advertising</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bronze Modal -->
+        <div class="modal" id="bronzeModal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h4>Bronze Membership Benefits  --  $50 A Month</h4>
+                <ul>
+                    <li>Priority training</li>
+                    <li>Quarterly ads</li>
+                    <li>Discount event fees</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Silver Modal -->
+        <div class="modal" id="silverModal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h4>Silver Membership Benefits  --  $100 A Month</h4>
+                <ul>
+                    <li>Monthly spotlight</li>
+                    <li>Ad features</li>
+                    <li>Early event access</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Gold Modal -->
+        <div class="modal" id="goldModal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h4>Gold Membership Benefits  --  $200 A Month</h4>
+                <ul>
+                    <li>Free workshops</li>
+                    <li>Community events</li>
+                    <li>Basic advertising</li>
+                </ul>
+            </div>
+        </div>
+
     </main>
+
 
     <footer>
         <p>&copy; <span id="year"></span> Jasta Dudley, Arizona</p>
         <p id="lastModified"></p>
     </footer>
-
-
-    <script src="scripts/join.js" defer></script>
 </body>
 </html>

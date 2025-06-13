@@ -7,22 +7,50 @@
   <link rel="stylesheet" href="../styles/normalize.css" >
   <link rel="stylesheet" href="styles/join-small.css" >
   <link rel="stylesheet" href="styles/join-large.css" media="screen and (min-width: 640px)" >
+  <script src="scripts/join.js" defer></script>
+  <script src="scripts/date.js" defer></script>
 </head>
 <body class="commerce">
   <header class="site-header">
   </header>
 
-  <main>
+  <main class="thank-you-main">
     <h1>Thank You for Joining!</h1>
-    <p>We’ve received your application. Someone from the Chamber will be in touch soon.</p>
+    <p>We look forward to getting in contact with you, <strong id="userFirstName"></strong>!</p>
+  
+    <div class="thank-you-card">
+      <ul id="submittedInfo"></ul>
+    </div>
+  
     <a href="index.html" class="cta-button">Back to Home</a>
   </main>
+  
+  
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const info = {
+      "First Name": urlParams.get('firstName'),
+      "Last Name": urlParams.get('lastName'),
+      "Email": urlParams.get('email'),
+      "Phone": urlParams.get('phone'),
+      "Business/Organization": urlParams.get('organization'),
+      "Submission Time": urlParams.get('timestamp') ? new Date(urlParams.get('timestamp')).toLocaleString() : 'N/A'
+    };
+  
+    document.getElementById("userFirstName").textContent = info["First Name"];
+    const list = document.getElementById("submittedInfo");
+    for (const key in info) {
+      const li = document.createElement('li');
+      li.innerHTML = `<strong>${key}:</strong> ${info[key]}`;
+      list.appendChild(li);
+    }
+  </script>
+  
 
   <footer>
     <p>&copy; <span id="year"></span> Jasta Dudley, Arizona</p>
     <p id="lastModified"></p>
   </footer>
 
-  <script src="../scripts/date.js" defer></script>
 </body>
 </html>
