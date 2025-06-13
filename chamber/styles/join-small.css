@@ -190,7 +190,6 @@ main h1 {
 
 
 /* === Join Form Styling === */
-
 form.join-form {
   display: flex;
   flex-direction: column;
@@ -339,7 +338,6 @@ form.join-form input[type="submit"]:hover {
 
 
 /*Member ship 'learn more' cards-to the right of the application form*/
-
 .membership-layout {
   display: flex;
   flex-direction: column;
@@ -355,7 +353,7 @@ form.join-form input[type="submit"]:hover {
 }
 
 .membership-card {
-  background-color: #e6f4ff; /* soft light blue */
+  background-color: #e6f4ff; 
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
@@ -488,10 +486,9 @@ form.join-form input[type="submit"]:hover {
   }
 }
 
-/* === Color Fill for Each Membership Type === */
+/* Color Fill for Each Membership Type */
 .membership-option[data-color="np"] input[type="radio"]:checked ~ .option-label {
-  background-color: #0077cc; /* deep blue */
-  color: white;
+  background-color: #0077cc;
   padding: 0.75rem 1rem;
   border-radius: 6px;
 }
