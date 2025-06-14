@@ -309,7 +309,68 @@ p {
       display: none;
     }
 }
-  
+
+
+
+
+
+/*=======  GAMES PAGE SPECIFICALLY  ========*/
+.game-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+
+.gameplay-img,
+.cover-art {
+  width: 48%;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+/* Hide cover art on mobile */
+@media screen and (max-width: 639px) {
+  .cover-art {
+    display: none;
+  }
+  .gameplay-img {
+    width: 100%;
+  }
+}
+.gameplay-img,
+.cover-art {
+  width: 48%;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.gameplay-img:hover,
+.cover-art:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+.game-card {
+  background-color: #fff8f1;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+
 
 
 /* General Footer */
