@@ -32,6 +32,14 @@ body {
     text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
     z-index: 2;
 }
+/*Title smaller on mobile*/
+@media screen and (max-width: 639px) {
+    .banner-title {
+      top: 1rem;
+      left: 50%;
+      font-size: 3rem;
+    }
+  }
 
 .banner-container {
     position: relative;
@@ -89,6 +97,43 @@ nav a:hover {
 
 
 
+
+
+/*Nave on mobile for hamburger menu*/
+@media screen and (max-width: 639px) {
+    nav {
+      display: none;
+    }
+  
+    nav.show {
+      display: block !important;
+      position: absolute;
+      top: 3.5rem;
+      right: 1rem;
+      left: 1rem;
+      background: rgba(91, 60, 36, 0.95);
+      padding: 1rem;
+      border-radius: 10px;
+      z-index: 10;
+    }
+}
+  
+  
+
+
+@media screen and (min-width: 640px) {
+    nav {
+      display: flex !important;
+    }
+    #menu-button {
+      display: none;
+    }
+}
+
+
+
+
+
 /*Falling Leaf Animation*/
 @keyframes fall {
     0% {
@@ -103,13 +148,18 @@ nav a:hover {
   
 .falling-leaf {
     position: absolute;
-    top: 100px;
+    top:-100px;
     width: 40px;
     height: auto;
     animation: fall 25s linear infinite;
-    pointer-events: none;
     z-index: 2;
 }
+
+@media screen and (max-width: 639px) {
+    .falling-leaf {
+      display: none;
+    }
+  }
 
   
 /* Intro & Sections */
@@ -156,64 +206,110 @@ p {
     transform: scale(1.05);
     cursor: pointer;
 }
-  
-.carousel {
-    display: flex;
-    overflow-x: auto;
-    gap: 1rem;
-    scroll-snap-type: x mandatory;
-}
-  
-.carousel img {
-    height: 180px;
-    flex-shrink: 0;
-    scroll-snap-align: center;
-    border-radius: 6px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
 
 
 
-
-
-
+/*Carousel*/
 /*Main page Carosel Scroll*/
 .award-carousel {
-    padding: 2rem;
-    background-color: #fff5e6;
-    text-align: center;
-}
+    position: relative;
+    margin: 2rem 1rem;
+    overflow: hidden;
+  }
   
-.award-carousel h2 {
-    margin-bottom: 1rem;
-    font-family: 'Georgia', serif;
-    color: #5c3a1e;
-}
-  
-.carousel {
+  .carousel-wrapper {
     display: flex;
-    overflow-x: auto;
-    gap: 1rem;
-    scroll-snap-type: x mandatory;
-    padding: 1rem 0;
+    align-items: center;
+  }
+  
+  .carousel-container {
+    overflow: hidden;
+    flex: 1;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.6s ease;
+  }
+  
+  .carousel-track img {
+    width: calc(50% - 0.5rem);
+    margin-right: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .carousel-btn {
+    background-color: rgba(91,60,36,0.8);
+    color: #fff8f1;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 0.5rem;
+  }
+  
+  .carousel-btn:hover {
+    background-color: rgba(91,60,36,1);
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .carousel-btn {
+      opacity: 0.7;
+      transition: opacity 0.2s ease;
+    }
+    .carousel-btn:hover {
+      opacity: 1;
+    }
+}
+
+
+
+
+/* Hide desktop banner title and show mobile header on small screens */
+@media screen and (max-width: 639px) {
+    .banner-title {
+      display: none;
+    }
+  
+    .mobile-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #5b3c24;
+      padding: 0.5rem 1rem;
+    }
+  
+    .mobile-title {
+      color: #fff8f1;
+      font-family: 'Dancing Script', cursive;
+      font-size: 2rem;
+    }
+  
+    #menu-button {
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      color: #fff8f1;
+      cursor: pointer;
+    }
+
+    .cta-button {
+        margin: 1.5rem auto;
+        padding: 0.75rem 2rem;
+        font-size: 0.9rem;
+      }
 }
   
-.carousel img {
-    height: 200px;
-    flex-shrink: 0;
-    scroll-snap-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+/* Hide mobile header on large screens */
+@media screen and (min-width: 640px) {
+    .mobile-header {
+      display: none;
+    }
 }
-.award-carousel {
-    background-color: #fff5e6;
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
-}
-
-
+  
 
 
 /* General Footer */
@@ -224,4 +320,14 @@ footer {
     text-align: center;
     font-size: 0.9rem;
     margin-top: 3rem;
+}
+footer a {
+  color: #ffb347;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #ffc98b;
+  text-decoration: underline;
 }

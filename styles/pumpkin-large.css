@@ -11,12 +11,16 @@ main {
     padding: 2rem;
 }
 
-  
-
-
 
 /*Carousel*/
 .carousel img {
     height: 220px;
 }
+
+
+nav:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  }
   
