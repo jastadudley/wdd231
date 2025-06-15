@@ -6,8 +6,15 @@
   <title>Pixel Pumpkin- Cozy Gaming Tips</title>
   <link rel="stylesheet" href="styles/small.css" >
   <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 640px)" >
-  <script src="scripts/pumpkin.js" defer></script>
+  <script src="scripts/date-nav.js"defer></script>
+  <script src="scripts/feedback.js"defer></script>
+  <script src="scripts/modals.js"defer></script>
+
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <meta name="description" content="Your cozy gaming site with game recommendations, tips, and more.">
+  <meta name="author" content="Jasta Dudley">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
 </head>
 <body>
     <header>
@@ -20,7 +27,7 @@
         <!-- Desktop header title -->
         <h1 class="banner-title">Pixel Pumpkin</h1>
         <div class="banner-container">
-          <img src="images/pumpkin-header.jpg" alt="Pixel Pumpkin banner with pumpkins and fall trees">
+          <img src="images/pumpkin-header.jpg" alt="Pixel Pumpkin banner with pumpkins and fall trees" loading="lazy">
         </div>
         
         <nav>
@@ -33,63 +40,63 @@
         
         
         <!-- Leaves on the left (0%-25%)-->
-        <img src="images/acorn.png" class="falling-leaf" style="left: 5%; animation-delay: 8s;" alt="falling acorn">
-        <img src="images/berry.png" class="falling-leaf" style="left: 24%; animation-delay: 5s;" alt="falling berry">
-        <img src="images/twig-bundle.png" class="falling-leaf" style="left: 13%; animation-delay: 8s;" alt="falling twig bundle">
-        <img src="images/acorn.png" class="falling-leaf" style="left: 5%; animation-delay: 4s;" alt="falling acorn">
+        <img src="images/acorn.png" class="falling-leaf" style="left: 5%; animation-delay: 8s;" alt="falling acorn" loading="lazy">
+        <img src="images/berry.png" class="falling-leaf" style="left: 24%; animation-delay: 5s;" alt="falling berry" loading="lazy">
+        <img src="images/twig-bundle.png" class="falling-leaf" style="left: 13%; animation-delay: 8s;" alt="falling twig bundle" loading="lazy">
+        <img src="images/acorn.png" class="falling-leaf" style="left: 5%; animation-delay: 4s;" alt="falling acorn" loading="lazy">
         
-        <img src="images/leaf2.png" class="falling-leaf" style="left: 18%; animation-delay: 0s;" alt="falling cream leaf">
-        <img src="images/leaf3.png" class="falling-leaf" style="left: 10%; animation-delay: 0s;" alt="falling tan leaf">
-        <img src="images/leaf4.png" class="falling-leaf" style="left: 21%; animation-delay: 3s;" alt="falling maroon leaf">
-        <img src="images/leaf5.png" class="falling-leaf" style="left: 20%; animation-delay: 6s;" alt="falling beige leaf">
-        <img src="images/leaf1.png" class="falling-leaf" style="left: 2%; animation-delay: .5s;" alt="falling yellow leaf">
-        <img src="images/leaf1.png" class="falling-leaf" style="left: 8%; animation-delay: 7s;" alt="falling yellow leaf">
-        <img src="images/leaf2.png" class="falling-leaf" style="left: 5%; animation-delay: 8s;" alt="falling cream leaf">
+        <img src="images/leaf2.png" class="falling-leaf" style="left: 18%; animation-delay: 0s;" alt="falling cream leaf" loading="lazy">
+        <img src="images/leaf3.png" class="falling-leaf" style="left: 10%; animation-delay: 0s;" alt="falling tan leaf" loading="lazy">
+        <img src="images/leaf4.png" class="falling-leaf" style="left: 21%; animation-delay: 3s;" alt="falling maroon leaf" loading="lazy">
+        <img src="images/leaf5.png" class="falling-leaf" style="left: 20%; animation-delay: 6s;" alt="falling beige leaf" loading="lazy">
+        <img src="images/leaf1.png" class="falling-leaf" style="left: 2%; animation-delay: .5s;" alt="falling yellow leaf" loading="lazy">
+        <img src="images/leaf1.png" class="falling-leaf" style="left: 8%; animation-delay: 7s;" alt="falling yellow leaf" loading="lazy">
+        <img src="images/leaf2.png" class="falling-leaf" style="left: 5%; animation-delay: 8s;" alt="falling cream leaf" loading="lazy">
       
 
 
-        <img src="images/acorn.png" class="falling-leaf" style="left: 5%; animation-delay: 9s;" alt="falling acorn">
-        <img src="images/berry.png" class="falling-leaf" style="left: 24%; animation-delay: 11s;" alt="falling berry">
-        <img src="images/twig-bundle.png" class="falling-leaf" style="left: 13%; animation-delay: 17s;" alt="falling twig bundle">
-        <img src="images/acorn.png" class="falling-leaf" style="left: 5%; animation-delay: 13s;" alt="falling acorn">
+        <img src="images/acorn.png" class="falling-leaf" style="left: 5%; animation-delay: 9s;" alt="falling acorn" loading="lazy">
+        <img src="images/berry.png" class="falling-leaf" style="left: 24%; animation-delay: 11s;" alt="falling berry" loading="lazy">
+        <img src="images/twig-bundle.png" class="falling-leaf" style="left: 13%; animation-delay: 17s;" alt="falling twig bundle" loading="lazy">
+        <img src="images/acorn.png" class="falling-leaf" style="left: 5%; animation-delay: 13s;" alt="falling acorn" loading="lazy">
         
-        <img src="images/leaf2.png" class="falling-leaf" style="left: 18%; animation-delay: 014s;" alt="falling cream leaf">
-        <img src="images/leaf3.png" class="falling-leaf" style="left: 10%; animation-delay: 15s;" alt="falling tan leaf">
-        <img src="images/leaf4.png" class="falling-leaf" style="left: 21%; animation-delay:   16s;" alt="falling maroon leaf">
-        <img src="images/leaf5.png" class="falling-leaf" style="left: 20%; animation-delay: 17s;" alt="falling beige leaf">
-        <img src="images/leaf1.png" class="falling-leaf" style="left: 2%; animation-delay: 18s;" alt="falling yellow leaf">
-        <img src="images/leaf1.png" class="falling-leaf" style="left: 8%; animation-delay: 19s;" alt="falling yellow leaf">
-        <img src="images/leaf2.png" class="falling-leaf" style="left: 5%; animation-delay: 20s;" alt="falling cream leaf">
+        <img src="images/leaf2.png" class="falling-leaf" style="left: 18%; animation-delay: 014s;" alt="falling cream leaf" loading="lazy">
+        <img src="images/leaf3.png" class="falling-leaf" style="left: 10%; animation-delay: 15s;" alt="falling tan leaf" loading="lazy">
+        <img src="images/leaf4.png" class="falling-leaf" style="left: 21%; animation-delay:   16s;" alt="falling maroon leaf" loading="lazy">
+        <img src="images/leaf5.png" class="falling-leaf" style="left: 20%; animation-delay: 17s;" alt="falling beige leaf" loading="lazy">
+        <img src="images/leaf1.png" class="falling-leaf" style="left: 2%; animation-delay: 18s;" alt="falling yellow leaf" loading="lazy">
+        <img src="images/leaf1.png" class="falling-leaf" style="left: 8%; animation-delay: 19s;" alt="falling yellow leaf" loading="lazy">
+        <img src="images/leaf2.png" class="falling-leaf" style="left: 5%; animation-delay: 20s;" alt="falling cream leaf" loading="lazy">
 
 
 
 
 
         <!-- Leaves on the right (73%-99%)-->
-        <img src="images/acorn.png" class="falling-leaf" style="left: 5%; animation-delay: 0s;" alt="falling acorn">
-        <img src="images/berry.png" class="falling-leaf" style="left: 24%; animation-delay: 5s;" alt="falling berry">
-        <img src="images/twig-bundle.png" class="falling-leaf" style="left: 13%; animation-delay: 9s;" alt="falling twig bundle">
-        <img src="images/berry.png" class="falling-leaf" style="left: 24%; animation-delay: 0s;" alt="falling berry">
+        <img src="images/acorn.png" class="falling-leaf" style="left: 5%; animation-delay: 0s;" alt="falling acorn" loading="lazy">
+        <img src="images/berry.png" class="falling-leaf" style="left: 24%; animation-delay: 5s;" alt="falling berry" loading="lazy">
+        <img src="images/twig-bundle.png" class="falling-leaf" style="left: 13%; animation-delay: 9s;" alt="falling twig bundle" loading="lazy">
+        <img src="images/berry.png" class="falling-leaf" style="left: 24%; animation-delay: 0s;" alt="falling berry" loading="lazy">
 
-        <img src="images/leaf1.png" class="falling-leaf" style="left: 73%; animation-delay: 0s;" alt="falling yellow leaf">
-        <img src="images/leaf6.png" class="falling-leaf" style="left: 85%; animation-delay: 4.5s;" alt="falling oak leaf">
-        <img src="images/leaf7.png" class="falling-leaf" style="left: 95%; animation-delay: 3s;" alt="falling spruce leaf">
-        <img src="images/leaf8.png" class="falling-leaf" style="left: 88%; animation-delay: 4s;" alt="falling maple leaf">
-        <img src="images/leaf1.png" class="falling-leaf" style="left: 92%; animation-delay: 6s;" alt="falling yellow leaf">
-        <img src="images/leaf2.png" class="falling-leaf" style="left: 99%; animation-delay: 7s;" alt="falling cream leaf">
+        <img src="images/leaf1.png" class="falling-leaf" style="left: 73%; animation-delay: 0s;" alt="falling yellow leaf" loading="lazy">
+        <img src="images/leaf6.png" class="falling-leaf" style="left: 85%; animation-delay: 4.5s;" alt="falling oak leaf" loading="lazy">
+        <img src="images/leaf7.png" class="falling-leaf" style="left: 95%; animation-delay: 3s;" alt="falling spruce leaf" loading="lazy">
+        <img src="images/leaf8.png" class="falling-leaf" style="left: 88%; animation-delay: 4s;" alt="falling maple leaf" loading="lazy">
+        <img src="images/leaf1.png" class="falling-leaf" style="left: 92%; animation-delay: 6s;" alt="falling yellow leaf" loading="lazy">
+        <img src="images/leaf2.png" class="falling-leaf" style="left: 99%; animation-delay: 7s;" alt="falling cream leaf" loading="lazy">
 
 
 
-        <img src="images/acorn.png" class="falling-leaf" style="left: 5%; animation-delay: 8s;" alt="falling acorn">
-        <img src="images/berry.png" class="falling-leaf" style="left: 24%; animation-delay: 13s;" alt="falling berry">
-        <img src="images/twig-bundle.png" class="falling-leaf" style="left: 13%; animation-delay: 9s;" alt="falling twig bundle">
-        <img src="images/berry.png" class="falling-leaf" style="left: 24%; animation-delay: 10s;" alt="falling berry">
+        <img src="images/acorn.png" class="falling-leaf" style="left: 5%; animation-delay: 8s;" alt="falling acorn" loading="lazy">
+        <img src="images/berry.png" class="falling-leaf" style="left: 24%; animation-delay: 13s;" alt="falling berry" loading="lazy">
+        <img src="images/twig-bundle.png" class="falling-leaf" style="left: 13%; animation-delay: 9s;" alt="falling twig bundle" loading="lazy">
+        <img src="images/berry.png" class="falling-leaf" style="left: 24%; animation-delay: 10s;" alt="falling berry" loading="lazy">
 
-        <img src="images/leaf1.png" class="falling-leaf" style="left: 73%; animation-delay: 12s;" alt="falling yellow leaf">
-        <img src="images/leaf7.png" class="falling-leaf" style="left: 95%; animation-delay: 14s;" alt="falling spruce leaf">
-        <img src="images/leaf8.png" class="falling-leaf" style="left: 88%; animation-delay: 15s;" alt="falling maple leaf">
-        <img src="images/leaf1.png" class="falling-leaf" style="left: 92%; animation-delay: 16s;" alt="falling yellow leaf">
-        <img src="images/leaf2.png" class="falling-leaf" style="left: 99%; animation-delay: 17s;" alt="falling cream leaf">
+        <img src="images/leaf1.png" class="falling-leaf" style="left: 73%; animation-delay: 12s;" alt="falling yellow leaf" loading="lazy">
+        <img src="images/leaf7.png" class="falling-leaf" style="left: 95%; animation-delay: 14s;" alt="falling spruce leaf" loading="lazy">
+        <img src="images/leaf8.png" class="falling-leaf" style="left: 88%; animation-delay: 15s;" alt="falling maple leaf" loading="lazy">
+        <img src="images/leaf1.png" class="falling-leaf" style="left: 92%; animation-delay: 16s;" alt="falling yellow leaf" loading="lazy">
+        <img src="images/leaf2.png" class="falling-leaf" style="left: 99%; animation-delay: 17s;" alt="falling cream leaf" loading="lazy">
 
       </header>
 
@@ -99,7 +106,7 @@
         <p>🍁 Now that you've found a game you're interested in,are you ready to truly melt into your favorite cozy game? Here are a few thoughtful tips to help you create the perfect environment and mindset for max relaxation.</p>
 
         <div class="intro-image">
-          <img src="images/cozy-gaming.jpg" alt="Cozy gaming setup with controller and headset">
+          <img src="images/cozy-gaming.jpg" alt="Cozy gaming setup with controller and headset" loading="lazy">
         </div>
       </section>
 
@@ -110,8 +117,10 @@
             <p>The right gear can really elevate your experience. A good headset lets you hear every rustle and musical cue—especially with cozy games, which often have award-winning soundtracks. A comfy controller helps you stay relaxed through long sessions.</p>
             <p>If you’re on PC, upgrading your RAM or using a higher resolution screen can smooth out gameplay and make it all feel more immersive.</p>
             <div class="button-row">
-              <a href="https://a.co/d/9BAI5Ri" target="_blank" class="cta-button small">🎧 My Favorite Headset</a>
-              <a href="https://a.co/d/bEVSGrl" target="_blank" class="cta-button small">🎮 My Go-To Controller</a>
+              <a href="HEADSET_URL" class="cta-button small" data-title="Headset">🎧 Headset</a>
+              <a href="CONTROLLER_URL" class="cta-button small" data-title="Controller">🎮 Controller</a>
+              <a href="MONITOR_URL" class="cta-button small" data-title="Monitor">🖥️ Monitor</a>
+              <a href="RAM_URL" class="cta-button small" data-title="RAM">💾 RAM</a>
             </div>
           </div>
         </div>
@@ -121,7 +130,26 @@
         <h3>🧘‍♀️ Avoid Burnout</h3>
         <p>Even the most wholesome games can feel stale if you don’t give yourself breaks. Especially if you're new to sitting for so long or zoning outin-front of a screen try not to binge for too many hours in one sitting. Stretch, hydrate, and give yourself time to miss the game—so when you come back, the magic feels fresh again. Cozy gaming is all about the long haul.</p>
       </section>
+
+      <section id="feedback">
+        <h2>Send Me Cozy Thoughts 💌</h2>
+        <form id="feedback-form" action="feedback.html" method="GET">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit" class="cta-button">Send Feedback</button>
+        </form>
+      </section>
     </main>
+
+    <div id="gear-modal" class="modal hidden" aria-hidden="true">
+      <div class="modal-content" role="dialog" aria-modal="true">
+        <button class="modal-close" aria-label="Close">×</button>
+        <h3 id="gear-modal-title"></h3>
+        <div class="gear-options"></div>
+      </div>
+    </div>
         
 
     <footer>

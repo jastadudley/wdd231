@@ -1,122 +1,197 @@
 [
   {
     "title": "GRIS",
-    "why": "A stunning visual experience. Its art style is painterly and poetic, paired with an award-winning, emotional soundtrack. There's no combat — just climbing virtual platforms, beautiful landscapes, puzzles, and a symbolic story of healing.",
+    "why": "A stunning visual experience. Its art style is painterly and poetic, paired with an award‑winning, emotional soundtrack. There's no combat — just climbing virtual platforms, beautiful landscapes, puzzles, and a symbolic story of healing.",
     "bestFor": "Players who want a short, introspective experience that feels more like art than traditional gameplay.",
     "imageGameplay": "images/gris-gameplay.jpg",
     "imageCover": "images/gris-gameplay-con.JPG",
-    "link": "https://store.steampowered.com/app/683320/GRIS/"
+    "links": {
+      "PC": "https://store.steampowered.com/app/683320/GRIS/",
+      "Switch": "https://www.nintendo.com/au/games/nintendo-switch/gris/",
+      "PS": "https://www.playstation.com/en-us/games/gris/",
+      "Xbox": "https://www.xbox.com/en-us/games/store/gris/9nhhp2h0zp98"
+    }
   },
   {
     "title": "Outer Wilds",
-    "why": "A serene but mind-blowing space exploration game—you’re uncovering cosmic mysteries orbit by orbit. It’s all about curiosity, gentle realization, and that “aha!” moment when the universe reveals its secrets.",
-    "bestFor": "Players who love exploration and discovery, with no pressure—just the joy of drifting through solar systems, piecing together a cosmic puzzle.",
+    "why": "A serene but mind‑blowing space exploration game — uncovering cosmic mysteries orbit by orbit.",
+    "bestFor": "Players who love exploration and discovery.",
     "imageGameplay": "images/outer-wilds-gameplay.jpg",
     "imageCover": "images/outer-wilds-gameplay-con.JPG",
-    "link": "https://store.steampowered.com/app/753640/Outer_Wilds/"
+    "links": {
+      "PC": "https://store.steampowered.com/app/753640/Outer_Wilds/",
+      "Switch": "https://www.nintendo.com/au/games/nintendo-switch/outer-wilds-archaeologist-edition/",
+      "PS": "https://www.playstation.com/en-us/games/outer-wilds/",
+      "Xbox": "https://www.xbox.com/en-us/games/store/outer-wilds/c596fkdkmqn7"
+    }
   },
   {
     "title": "Stardew Valley",
-    "why": "A cozy farming life with seasonal charm, deep friendships, and endless discovery. Each season brings new visuals and there's just enough of a plot to not get bored.",
-    "bestFor": "Anyone who loves immersive, gentle gameplay that evolves over time—and maybe wants to build a virtual farmstead and family at their own pace.",
+    "why": "A cozy farming life with seasonal charm, deep friendships, and endless discovery.",
+    "bestFor": "Anyone who loves immersive, gentle gameplay that evolves over time.",
     "imageGameplay": "images/stardew-gameplay.jpg",
     "imageCover": "images/stardew-cover.jpg",
-    "link": "https://store.steampowered.com/app/413150/Stardew_Valley/"
+    "links": {
+      "PC": "https://store.steampowered.com/app/413150/Stardew_Valley/",
+      "Switch": "https://www.nintendo.com/au/games/nintendo-switch/stardew-valley/",
+      "PS": "https://www.playstation.com/en-us/games/stardew-valley/",
+      "Xbox": "https://www.xbox.com/en-us/games/store/stardew-valley/c3d891z6tnqm"
+    }
   },
   {
     "title": "Call of the Sea",
-    "why": "A gorgeous, puzzle-rich journey on a mysterious island. The story pulled me in right away—and I couldn’t stop until I unraveled every secret and embraced that sense of wonder.",
-    "bestFor": "Fans of atmospheric exploration and thoughtful puzzles—with a captivating story that leaves you thinking long afterward.",
+    "why": "Gorgeous, puzzle‑rich journey on a mysterious island.",
+    "bestFor": "Fans of atmospheric exploration and thoughtful puzzles.",
     "imageGameplay": "images/call-of-the-sea-gameplay.jpg",
     "imageCover": "images/call-of-the-sea-cover.jpg",
-    "link": "https://store.steampowered.com/app/1042490/Call_of_the_Sea/"
+    "links": {
+      "PC": "https://store.steampowered.com/app/1042490/Call_of_the_Sea/",
+      "Switch": "https://www.nintendo.com/au/search/no-results",
+      "PS": "https://www.playstation.com/en-us/search/no-results",
+      "Xbox": "https://www.xbox.com/en-us/games/store/call-of-the-sea/9p27zmz7fdpz"
+    }
   },
   {
     "title": "What Remains of Edith Finch",
-    "why": "A breathtaking narrative walk-through. Each vignette is a fresh emotional ride, weaving a beautiful, bittersweet tapestry about family and memory. It felt like reading a moving collection of shocking and bittersweet stories.",
-    "bestFor": "Players who adore storytelling and can spend just 1–2 hours in an immersive, unforgettable world.",
+    "why": "A breathtaking narrative walk‑through — a fresh emotional ride with each vignette.",
+    "bestFor": "Players who adore storytelling and can spend 1–2 hours immersed.",
     "imageGameplay": "images/edith-gameplay.jpg",
     "imageCover": "images/edith-cover.jpg",
-    "link": "https://store.steampowered.com/app/501300/What_Remains_of_Edith_Finch/"
+    "links": {
+      "PC": "https://store.steampowered.com/app/501300/What_Remains_of_Edith_Finch/",
+      "Switch": "https://www.nintendo.com/au/search/no-results",
+      "PS": "https://www.playstation.com/en-us/games/what-remains-of-edith-finch/",
+      "Xbox": "https://www.xbox.com/en-US/games/store/what-remains-of-edith-finch/BSLGLG8P9T01/0001"
+    }
   },
   {
     "title": "Dorfromantik",
-    "why": "A chill, tile-based building puzzle that feels like crafting a peaceful miniature world. Soothing music, gentle strategy—it’s perfect to unwind and needs no deep thought.",
-    "bestFor": "Anyone who truly just wants to relax, meditative game experience without pressure—just pure zen tile placement.",
+    "why": "A chill, tile‑based building puzzle that feels like crafting a peaceful miniature world.",
+    "bestFor": "Anyone who just wants to relax—pure zen tile placement.",
     "imageGameplay": "images/dorfromantik-gameplay.jpg",
     "imageCover": "images/dorfromantik-cover.jpg",
-    "link": "https://store.steampowered.com/app/1455840/Dorfromantik/"
+    "links": {
+      "PC": "https://store.steampowered.com/app/1455840/Dorfromantik/",
+      "Switch": "https://www.nintendo.com/au/search/no-results",
+      "PS": "https://www.playstation.com/en-us/no-results",
+      "Xbox": "https://www.xbox.com/en-us/Search/no-results"
+    }
   },
   {
     "title": "Assemble with Care",
-    "why": "A sweet little narrative about repairing broken things—and hearts. It’s gentle, heartfelt, and feels like you're helping someone put their world back together.",
-    "bestFor": "Players who like short, emotional stories with light puzzles and a soul-warming vibe.",
+    "why": "A sweet little narrative about repairing broken things—and hearts.",
+    "bestFor": "Players who like short, emotional stories with light puzzles.",
     "imageGameplay": "images/assemble-gameplay.jpg",
     "imageCover": "images/assemble-cover.jpg",
-    "link": "https://store.steampowered.com/app/1202900/Assemble_with_Care/"
+    "links": {
+      "PC": "https://store.steampowered.com/app/1202900/Assemble_with_Care/",
+      "Switch": "https://www.nintendo.com/au/search/no-results",
+      "PS": "https://www.playstation.com/en-us/search/no-results",
+      "Xbox": "https://www.xbox.com/en-us/Search/no-results"
+    }
   },
   {
     "title": "Little Witch in the Woods",
-    "why": "A magical, cozy adventure where you brew potions, befriend woodland creatures, and explore enchanted forests. It’s whimsical, comforting, and simply delightful.",
-    "bestFor": "Anyone who wants a cozy life sim sprinkled with magic and sunny exploration.",
+    "why": "A magical, cozy adventure where you brew potions, befriend woodland creatures, and explore enchanted forests.",
+    "bestFor": "Anyone wanting a cozy life sim with magic and exploration.",
     "imageGameplay": "images/little-witch-gameplay.jpg",
     "imageCover": "images/little-witch-cover.jpg",
-    "link": "https://store.steampowered.com/app/1594940/Little_Witch_in_the_Woods/"
+    "links": {
+      "PC": "https://store.steampowered.com/app/1594940/Little_Witch_in_the_Woods/",
+      "Switch": "https://www.nintendo.com/au/search/no-results",
+      "PS": "https://www.playstation.com/en-us/search/no-results",
+      "Xbox": "https://www.xbox.com/en-us/games/store/little-witch-in-the-woods-game-preview/9pm9zvwt18wr"
+    }
   },
   {
     "title": "Spiritfarer",
-    "why": "A beautifully animated management game about helping spirits pass on. It’s emotional and therapeutic, wrapped in comforting art and music.",
-    "bestFor": "Players who love meaningful gameplay and aren’t afraid to shed a tear or two along the way.",
+    "why": "A beautifully animated management game about helping spirits pass on.",
+    "bestFor": "Players who love meaningful gameplay and aren’t afraid to shed a tear.",
     "imageGameplay": "images/spiritfarer-gameplay.jpg",
     "imageCover": "images/spiritfarer-cover.jpg",
-    "link": "https://store.steampowered.com/app/972660/Spiritfarer/"
+    "links": {
+      "PC": "https://store.steampowered.com/app/972660/Spiritfarer_Farewell_Edition/",
+      "Switch": "https://www.nintendo.com/au/games/nintendo-switch/spiritfarer/",
+      "PS": "https://www.playstation.com/en-us/games/spiritfarer/",
+      "Xbox": "https://www.xbox.com/en-us/games/store/spiritfarer-farewell-edition/9ng5l58fd3x5"
+    }
   },
   {
     "title": "Eastshade",
-    "why": "You play a traveling painter exploring a lush world. There’s no combat, just inspiration, discovery, and gentle quests.",
-    "bestFor": "Creative souls who want exploration and atmosphere over action.",
+    "why": "You play a traveling painter exploring a lush world. No combat—just inspiration and quests.",
+    "bestFor": "Creative souls craving exploration and atmosphere.",
     "imageGameplay": "images/eastshade-gameplay.jpg",
     "imageCover": "images/eastshade-cover.jpg",
-    "link": "https://store.steampowered.com/app/715560/Eastshade/"
+    "links": {
+      "PC": "https://store.steampowered.com/app/715560/Eastshade/",
+      "Switch": "https://www.nintendo.com/au/search/no-results",
+      "PS": "https://www.playstation.com/en-us/search/no-results",
+      "Xbox": "https://www.xbox.com/en-us/games/store/eastshade/9plcr0fr564k"
+    }
   },
   {
     "title": "A Short Hike",
-    "why": "A tiny game with a big heart. Explore, talk to strangers, find feathers, and relax in a vibrant wilderness with no stress at all.",
-    "bestFor": "Quick cozy sessions that leave a smile on your face.",
+    "why": "A tiny game with a big heart. Explore, talk to strangers, find feathers, and relax.",
+    "bestFor": "Quick cozy sessions that leave a smile.",
     "imageGameplay": "images/short-hike-gameplay.jpg",
     "imageCover": "images/short-hike-cover.jpg",
-    "link": "https://store.steampowered.com/app/1055540/A_Short_Hike/"
+    "links": {
+      "PC": "https://store.steampowered.com/app/1055540/A_Short_Hike/",
+      "Switch": "https://www.nintendo.com/au/search/no-results",
+      "PS": "https://www.playstation.com/en-us/games/a-short-hike/",
+      "Xbox": "https://www.xbox.com/en-us/games/store/a-short-hike/9nk78df207sd"
+    }
   },
   {
     "title": "Unpacking",
-    "why": "A meditative game about unpacking a life, one box at a time. No time limits or scores—just vibes.",
+    "why": "A meditative unpacking life—no time limits or scores, just vibes.",
     "bestFor": "Those who love gentle puzzles and storytelling through visuals.",
     "imageGameplay": "images/unpacking-gameplay.jpg",
     "imageCover": "images/unpacking-cover.jpg",
-    "link": "https://store.steampowered.com/app/1135690/Unpacking/"
+    "links": {
+      "PC": "https://store.steampowered.com/app/1135690/Unpacking/",
+      "Switch": "https://www.nintendo.com/au/games/nintendo-switch/unpacking/",
+      "PS": "https://www.playstation.com/en-us/games/unpacking/",
+      "Xbox": "https://www.xbox.com/en-us/games/store/unpacking/9nh5hn11fg4m"
+    }
   },
   {
     "title": "Slime Rancher",
-    "why": "Catch cute bouncing slimes, build a cozy ranch, and discover strange lands. It’s weird, fun, and totally chill.",
-    "bestFor": "Wholesome fun with lots of color and collecting satisfaction.",
+    "why": "Catch cute slimes, build a cozy ranch, and explore strange lands.",
+    "bestFor": "Wholesome fun with collecting satisfaction.",
     "imageGameplay": "images/slime-rancher-gameplay.jpg",
     "imageCover": "images/slime-rancher-cover.jpg",
-    "link": "https://store.steampowered.com/app/433340/Slime_Rancher/"
+    "links": {
+      "PC": "https://store.steampowered.com/app/433340/Slime_Rancher/",
+      "Switch": "https://www.nintendo.com/au/games/nintendo-switch/slime-rancher-plortable-edition/",
+      "PS": "https://www.playstation.com/en-us/games/slime-rancher/",
+      "Xbox": "https://www.xbox.com/en-us/games/store/slime-rancher/c2nc88m7nwz1"
+    }
   },
   {
     "title": "Lake",
-    "why": "Deliver mail and reconnect with people in your hometown. A relaxing slice-of-life experience.",
-    "bestFor": "Those craving simplicity, nostalgia, and small-town vibes.",
+    "why": "Deliver mail and reconnect in your hometown—a slice‑of‑life experience.",
+    "bestFor": "Players craving simplicity and nostalgia.",
     "imageGameplay": "images/lake-gameplay.jpg",
     "imageCover": "images/lake-cover.jpg",
-    "link": "https://store.steampowered.com/app/1118240/Lake/"
+    "links": {
+      "PC": "https://store.steampowered.com/app/1118240/Lake/",
+      "Switch": "https://www.nintendo.com/au/search/no-results",
+      "PS": "https://www.playstation.com/en-us/search/no-results",
+      "Xbox": "https://www.xbox.com/en-us/Search/no-results"
+    }
   },
   {
     "title": "Cozy Grove",
-    "why": "Like Animal Crossing meets ghost stories. Help spirits, collect resources, and watch the island grow and change daily.",
-    "bestFor": "Players who want long-term cozy play with gentle narrative and progression.",
+    "why": "Like Animal Crossing meets ghost stories—help spirits and watch the island grow.",
+    "bestFor": "Players seeking long-term cozy gameplay and narrative.",
     "imageGameplay": "images/cozy-grove-gameplay.jpg",
     "imageCover": "images/cozy-grove-cover.jpg",
-    "link": "https://store.steampowered.com/app/1458100/Cozy_Grove/"
+    "links": {
+      "PC": "https://store.steampowered.com/app/1458100/Cozy_Grove/",
+      "Switch": "https://www.nintendo.com/au/search/no-results",
+      "PS": "https://www.playstation.com/en-us/games/cozy-grove/",
+      "Xbox": "https://www.xbox.com/en-US/games/store/cozy-grove/9PJCC91CZ3WN/0010"
+    }
   }
 ]

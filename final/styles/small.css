@@ -315,6 +315,24 @@ p {
 
 
 /*=======  GAMES PAGE SPECIFICALLY  ========*/
+#console-select {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.console-btn {
+  background: #fff8f1;
+  border: 2px solid #a86030;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.console-btn.active {
+  background: #a86030;
+  color: white;
+}
+
+
 .game-images {
   display: flex;
   justify-content: space-between;
@@ -397,12 +415,18 @@ p {
     display: none;
   }
 }
-.button-row {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 1.5rem;
+
+.button-row { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 1rem; 
+  justify-content: flex-start;
+  margin-top: 1rem; 
+}
+
+.cta-button.small { 
+  font-size: 0.9rem; 
+  padding: 0.5rem 1rem; 
 }
 
 .cta-button.small {
@@ -410,6 +434,80 @@ p {
   font-size: 0.85rem;
   margin: 0;
 }
+
+/*feedback form*/
+#feedback { margin: 2rem auto; max-width: 600px; background: #fff8f1; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+#feedback label { display: block; margin-top: 1rem; font-weight: bold; }
+#feedback input, #feedback textarea { width: 100%; padding: 0.5rem; margin-top: 0.25rem; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; }
+#feedback .cta-button { width: auto; margin: 1rem 0 0 0; }
+
+/*Modals*/
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal.hidden { display: none; }
+.modal-content {
+  background: #fff8f1;
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-width: 90%;
+  width: 400px;
+  text-align: center;
+}
+.modal-close {
+  position: absolute;
+  top: 0.5rem; right: 0.5rem;
+  background: none;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+.gear-options a {
+  display: block;
+  margin: 0.75rem 0;
+  text-decoration: none;
+  color: #a86030;
+  font-weight: bold;
+}
+.modal-content {
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.5rem;
+  background: #fff0e6;
+  color: #a86030;
+  border: 2px solid #a86030;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  background: #ffe7d4;
+}
+
+.modal {
+  cursor: pointer;
+}
+
+.modal-content {
+  cursor: auto;
+}
+
 
 
 
