@@ -30,8 +30,8 @@ function renderGames(games) {
     card.className = 'game-card';
     card.innerHTML = `
       <div class="game-images">
-        <img src="${g.imageGameplay}" loading="lazy" alt="${g.title} gameplay">
-        <img src="${g.imageCover}" loading="lazy" alt="${g.title} cover art">
+        <img src="${g.imageGameplay}" class="gameplay-img" loading="lazy" alt="${g.title} gameplay">
+        <img src="${g.imageCover}" class="cover-art" loading="lazy" alt="${g.title} cover art">
       </div>
       <div class="game-info">
         <h3>${g.title}</h3>

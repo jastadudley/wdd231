@@ -319,6 +319,10 @@ p {
   text-align: center;
   margin-bottom: 1.5rem;
 }
+
+.game-info {
+  margin-top: 1rem;
+}
 .console-btn {
   background: #fff8f1;
   border: 2px solid #a86030;
@@ -335,19 +339,24 @@ p {
 
 .game-images {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1rem 0;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
+  margin: 1rem 0;
 }
+
 
 .gameplay-img,
 .cover-art {
   width: 48%;
+  max-width: 450px;
+  height: auto;
   border-radius: 6px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 /* Hide cover art on mobile */
 @media screen and (max-width: 639px) {
@@ -358,14 +367,7 @@ p {
     width: 100%;
   }
 }
-.gameplay-img,
-.cover-art {
-  width: 48%;
-  border-radius: 6px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  object-fit: cover;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+
 
 /* Hover effect */
 .gameplay-img:hover,
@@ -386,6 +388,13 @@ p {
   transform: translateY(-4px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
+
+
+
+
+
+
+
 
 
 

@@ -6,10 +6,10 @@
     "imageGameplay": "images/gris-gameplay.jpg",
     "imageCover": "images/gris-gameplay-con.JPG",
     "links": {
-      "PC": "https://store.steampowered.com/app/683320/GRIS/",
-      "Switch": "https://www.nintendo.com/au/games/nintendo-switch/gris/",
-      "PS": "https://www.playstation.com/en-us/games/gris/",
-      "Xbox": "https://www.xbox.com/en-us/games/store/gris/9nhhp2h0zp98"
+      "pc": "https://store.steampowered.com/app/683320/GRIS/",
+      "switch": "https://www.nintendo.com/au/games/nintendo-switch/gris/",
+      "ps": "https://www.playstation.com/en-us/games/gris/",
+      "xbox": "https://www.xbox.com/en-us/games/store/gris/9nhhp2h0zp98"
     }
   },
   {
@@ -19,10 +19,10 @@
     "imageGameplay": "images/outer-wilds-gameplay.jpg",
     "imageCover": "images/outer-wilds-gameplay-con.JPG",
     "links": {
-      "PC": "https://store.steampowered.com/app/753640/Outer_Wilds/",
-      "Switch": "https://www.nintendo.com/au/games/nintendo-switch/outer-wilds-archaeologist-edition/",
-      "PS": "https://www.playstation.com/en-us/games/outer-wilds/",
-      "Xbox": "https://www.xbox.com/en-us/games/store/outer-wilds/c596fkdkmqn7"
+      "pc": "https://store.steampowered.com/app/753640/Outer_Wilds/",
+      "switch": "https://www.nintendo.com/au/games/nintendo-switch/outer-wilds-archaeologist-edition/",
+      "ps": "https://www.playstation.com/en-us/games/outer-wilds/",
+      "xbox": "https://www.xbox.com/en-us/games/store/outer-wilds/c596fkdkmqn7"
     }
   },
   {
@@ -32,10 +32,10 @@
     "imageGameplay": "images/stardew-gameplay.jpg",
     "imageCover": "images/stardew-cover.jpg",
     "links": {
-      "PC": "https://store.steampowered.com/app/413150/Stardew_Valley/",
-      "Switch": "https://www.nintendo.com/au/games/nintendo-switch/stardew-valley/",
-      "PS": "https://www.playstation.com/en-us/games/stardew-valley/",
-      "Xbox": "https://www.xbox.com/en-us/games/store/stardew-valley/c3d891z6tnqm"
+      "pc": "https://store.steampowered.com/app/413150/Stardew_Valley/",
+      "switch": "https://www.nintendo.com/au/games/nintendo-switch/stardew-valley/",
+      "ps": "https://www.playstation.com/en-us/games/stardew-valley/",
+      "xbox": "https://www.xbox.com/en-us/games/store/stardew-valley/c3d891z6tnqm"
     }
   },
   {
@@ -45,10 +45,10 @@
     "imageGameplay": "images/call-of-the-sea-gameplay.jpg",
     "imageCover": "images/call-of-the-sea-cover.jpg",
     "links": {
-      "PC": "https://store.steampowered.com/app/1042490/Call_of_the_Sea/",
-      "Switch": "https://www.nintendo.com/au/search/no-results",
-      "PS": "https://www.playstation.com/en-us/search/no-results",
-      "Xbox": "https://www.xbox.com/en-us/games/store/call-of-the-sea/9p27zmz7fdpz"
+      "pc": "https://store.steampowered.com/app/1042490/Call_of_the_Sea/",
+      "switch": "https://www.nintendo.com/au/search/no-results",
+      "ps": "https://www.playstation.com/en-us/search/no-results",
+      "xbox": "https://www.xbox.com/en-us/games/store/call-of-the-sea/9p27zmz7fdpz"
     }
   },
   {
@@ -58,10 +58,10 @@
     "imageGameplay": "images/edith-gameplay.jpg",
     "imageCover": "images/edith-cover.jpg",
     "links": {
-      "PC": "https://store.steampowered.com/app/501300/What_Remains_of_Edith_Finch/",
-      "Switch": "https://www.nintendo.com/au/search/no-results",
-      "PS": "https://www.playstation.com/en-us/games/what-remains-of-edith-finch/",
-      "Xbox": "https://www.xbox.com/en-US/games/store/what-remains-of-edith-finch/BSLGLG8P9T01/0001"
+      "pc": "https://store.steampowered.com/app/501300/What_Remains_of_Edith_Finch/",
+      "switch": "https://www.nintendo.com/au/search/no-results",
+      "ps": "https://www.playstation.com/en-us/games/what-remains-of-edith-finch/",
+      "xbox": "https://www.xbox.com/en-US/games/store/what-remains-of-edith-finch/BSLGLG8P9T01/0001"
     }
   },
   {
@@ -71,10 +71,10 @@
     "imageGameplay": "images/dorfromantik-gameplay.jpg",
     "imageCover": "images/dorfromantik-cover.jpg",
     "links": {
-      "PC": "https://store.steampowered.com/app/1455840/Dorfromantik/",
-      "Switch": "https://www.nintendo.com/au/search/no-results",
-      "PS": "https://www.playstation.com/en-us/no-results",
-      "Xbox": "https://www.xbox.com/en-us/Search/no-results"
+      "pc": "https://store.steampowered.com/app/1455840/Dorfromantik/",
+      "switch": "https://www.nintendo.com/au/search/no-results",
+      "ps": "https://www.playstation.com/en-us/no-results",
+      "xbox": "https://www.xbox.com/en-us/Search/no-results"
     }
   },
   {
@@ -84,10 +84,10 @@
     "imageGameplay": "images/assemble-gameplay.jpg",
     "imageCover": "images/assemble-cover.jpg",
     "links": {
-      "PC": "https://store.steampowered.com/app/1202900/Assemble_with_Care/",
-      "Switch": "https://www.nintendo.com/au/search/no-results",
-      "PS": "https://www.playstation.com/en-us/search/no-results",
-      "Xbox": "https://www.xbox.com/en-us/Search/no-results"
+      "pc": "https://store.steampowered.com/app/1202900/Assemble_with_Care/",
+      "switch": "https://www.nintendo.com/au/search/no-results",
+      "ps": "https://www.playstation.com/en-us/search/no-results",
+      "xbox": "https://www.xbox.com/en-us/Search/no-results"
     }
   },
   {
@@ -97,10 +97,10 @@
     "imageGameplay": "images/little-witch-gameplay.jpg",
     "imageCover": "images/little-witch-cover.jpg",
     "links": {
-      "PC": "https://store.steampowered.com/app/1594940/Little_Witch_in_the_Woods/",
-      "Switch": "https://www.nintendo.com/au/search/no-results",
-      "PS": "https://www.playstation.com/en-us/search/no-results",
-      "Xbox": "https://www.xbox.com/en-us/games/store/little-witch-in-the-woods-game-preview/9pm9zvwt18wr"
+      "pc": "https://store.steampowered.com/app/1594940/Little_Witch_in_the_Woods/",
+      "switch": "https://www.nintendo.com/au/search/no-results",
+      "ps": "https://www.playstation.com/en-us/search/no-results",
+      "xbox": "https://www.xbox.com/en-us/games/store/little-witch-in-the-woods-game-preview/9pm9zvwt18wr"
     }
   },
   {
@@ -110,10 +110,10 @@
     "imageGameplay": "images/spiritfarer-gameplay.jpg",
     "imageCover": "images/spiritfarer-cover.jpg",
     "links": {
-      "PC": "https://store.steampowered.com/app/972660/Spiritfarer_Farewell_Edition/",
-      "Switch": "https://www.nintendo.com/au/games/nintendo-switch/spiritfarer/",
-      "PS": "https://www.playstation.com/en-us/games/spiritfarer/",
-      "Xbox": "https://www.xbox.com/en-us/games/store/spiritfarer-farewell-edition/9ng5l58fd3x5"
+      "pc": "https://store.steampowered.com/app/972660/Spiritfarer_Farewell_Edition/",
+      "switch": "https://www.nintendo.com/au/games/nintendo-switch/spiritfarer/",
+      "ps": "https://www.playstation.com/en-us/games/spiritfarer/",
+      "xbox": "https://www.xbox.com/en-us/games/store/spiritfarer-farewell-edition/9ng5l58fd3x5"
     }
   },
   {
@@ -123,10 +123,10 @@
     "imageGameplay": "images/eastshade-gameplay.jpg",
     "imageCover": "images/eastshade-cover.jpg",
     "links": {
-      "PC": "https://store.steampowered.com/app/715560/Eastshade/",
-      "Switch": "https://www.nintendo.com/au/search/no-results",
-      "PS": "https://www.playstation.com/en-us/search/no-results",
-      "Xbox": "https://www.xbox.com/en-us/games/store/eastshade/9plcr0fr564k"
+      "pc": "https://store.steampowered.com/app/715560/Eastshade/",
+      "switch": "https://www.nintendo.com/au/search/no-results",
+      "ps": "https://www.playstation.com/en-us/search/no-results",
+      "xbox": "https://www.xbox.com/en-us/games/store/eastshade/9plcr0fr564k"
     }
   },
   {
@@ -136,10 +136,10 @@
     "imageGameplay": "images/short-hike-gameplay.jpg",
     "imageCover": "images/short-hike-cover.jpg",
     "links": {
-      "PC": "https://store.steampowered.com/app/1055540/A_Short_Hike/",
-      "Switch": "https://www.nintendo.com/au/search/no-results",
-      "PS": "https://www.playstation.com/en-us/games/a-short-hike/",
-      "Xbox": "https://www.xbox.com/en-us/games/store/a-short-hike/9nk78df207sd"
+      "pc": "https://store.steampowered.com/app/1055540/A_Short_Hike/",
+      "switch": "https://www.nintendo.com/au/search/no-results",
+      "ps": "https://www.playstation.com/en-us/games/a-short-hike/",
+      "xbox": "https://www.xbox.com/en-us/games/store/a-short-hike/9nk78df207sd"
     }
   },
   {
@@ -149,10 +149,10 @@
     "imageGameplay": "images/unpacking-gameplay.jpg",
     "imageCover": "images/unpacking-cover.jpg",
     "links": {
-      "PC": "https://store.steampowered.com/app/1135690/Unpacking/",
-      "Switch": "https://www.nintendo.com/au/games/nintendo-switch/unpacking/",
-      "PS": "https://www.playstation.com/en-us/games/unpacking/",
-      "Xbox": "https://www.xbox.com/en-us/games/store/unpacking/9nh5hn11fg4m"
+      "pc": "https://store.steampowered.com/app/1135690/Unpacking/",
+      "switch": "https://www.nintendo.com/au/games/nintendo-switch/unpacking/",
+      "ps": "https://www.playstation.com/en-us/games/unpacking/",
+      "xbox": "https://www.xbox.com/en-us/games/store/unpacking/9nh5hn11fg4m"
     }
   },
   {
@@ -162,10 +162,10 @@
     "imageGameplay": "images/slime-rancher-gameplay.jpg",
     "imageCover": "images/slime-rancher-cover.jpg",
     "links": {
-      "PC": "https://store.steampowered.com/app/433340/Slime_Rancher/",
-      "Switch": "https://www.nintendo.com/au/games/nintendo-switch/slime-rancher-plortable-edition/",
-      "PS": "https://www.playstation.com/en-us/games/slime-rancher/",
-      "Xbox": "https://www.xbox.com/en-us/games/store/slime-rancher/c2nc88m7nwz1"
+      "pc": "https://store.steampowered.com/app/433340/Slime_Rancher/",
+      "switch": "https://www.nintendo.com/au/games/nintendo-switch/slime-rancher-plortable-edition/",
+      "ps": "https://www.playstation.com/en-us/games/slime-rancher/",
+      "xbox": "https://www.xbox.com/en-us/games/store/slime-rancher/c2nc88m7nwz1"
     }
   },
   {
@@ -175,10 +175,10 @@
     "imageGameplay": "images/lake-gameplay.jpg",
     "imageCover": "images/lake-cover.jpg",
     "links": {
-      "PC": "https://store.steampowered.com/app/1118240/Lake/",
-      "Switch": "https://www.nintendo.com/au/search/no-results",
-      "PS": "https://www.playstation.com/en-us/search/no-results",
-      "Xbox": "https://www.xbox.com/en-us/Search/no-results"
+      "pc": "https://store.steampowered.com/app/1118240/Lake/",
+      "switch": "https://www.nintendo.com/au/search/no-results",
+      "ps": "https://www.playstation.com/en-us/search/no-results",
+      "xbox": "https://www.xbox.com/en-us/Search/no-results"
     }
   },
   {
@@ -188,10 +188,10 @@
     "imageGameplay": "images/cozy-grove-gameplay.jpg",
     "imageCover": "images/cozy-grove-cover.jpg",
     "links": {
-      "PC": "https://store.steampowered.com/app/1458100/Cozy_Grove/",
-      "Switch": "https://www.nintendo.com/au/search/no-results",
-      "PS": "https://www.playstation.com/en-us/games/cozy-grove/",
-      "Xbox": "https://www.xbox.com/en-US/games/store/cozy-grove/9PJCC91CZ3WN/0010"
+      "pc": "https://store.steampowered.com/app/1458100/Cozy_Grove/",
+      "switch": "https://www.nintendo.com/au/search/no-results",
+      "ps": "https://www.playstation.com/en-us/games/cozy-grove/",
+      "xbox": "https://www.xbox.com/en-US/games/store/cozy-grove/9PJCC91CZ3WN/0010"
     }
   }
 ]
