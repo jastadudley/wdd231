@@ -1,7 +1,6 @@
-// Get saved or default console (lowercase to match JSON)
 let selectedConsole = localStorage.getItem('console') || 'pc';
 
-// Attach click logic to console buttons after DOM loads
+
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.console-btn').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -14,10 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Store the games list for re-rendering
+
 let gameList = [];
 
-// Render cards based on selected console
+
 function renderGames(games) {
   const container = document.getElementById('game-container');
   container.innerHTML = '';
@@ -45,13 +44,13 @@ function renderGames(games) {
   });
 }
 
-// Helper: capitalize console name
+
 function capitalizeConsole(str) {
   if (str.toLowerCase() === 'ps') return 'PlayStation';
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-// Fetch games JSON once & render
+
 fetch('games.json')
   .then(res => res.json())
   .then(games => {

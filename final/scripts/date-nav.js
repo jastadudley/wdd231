@@ -9,9 +9,3 @@ lastModified.textContent = `Last Modified: ${document.lastModified}`;
 //Hamburger Menu
 const menuButton = document.getElementById("menu-button");
 const nav = document.querySelector("nav");
-
-menuButton.addEventListener("click", () => {
-  console.log("Hamburger clicked!");
-  nav.classList.toggle("show");
-});
-
