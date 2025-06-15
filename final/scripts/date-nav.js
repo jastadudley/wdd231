@@ -15,5 +15,3 @@ menuButton.addEventListener("click", () => {
   nav.classList.toggle("show");
 });
 
-//lazy loading tool
-[...document.images].filter(img => !img.loading).forEach(img => console.log(img.src));
