@@ -54,3 +54,27 @@ document.addEventListener("DOMContentLoaded", () => {
     autoplay = setInterval(showNext, 6000);
   });
 });
+
+//Json Game Cards
+fetch('games.json')
+  .then(res => res.json())
+  .then(games => {
+    const container = document.getElementById('game-container');
+    games.forEach(g => {
+      const card = document.createElement('div');
+      card.className = 'game-card';
+      card.innerHTML = `
+        <div class="game-images">
+          <img src="${g.imageGameplay}" class="gameplay-img" alt="${g.title} gameplay">
+          <img src="${g.imageCover}" class="cover-art" alt="${g.title} cover art">
+        </div>
+        <div class="game-info">
+          <h3>${g.title}</h3>
+          <p><strong>Why I Love It:</strong> ${g.why}</p>
+          <p><strong>Best For:</strong> ${g.bestFor}</p>
+          <a href="${g.link}" class="cta-button" target="_blank">Check it out on Steam</a>
+        </div>`;
+      container.appendChild(card);
+    });
+  })
+  .catch(err => console.error('Error loading games:', err));

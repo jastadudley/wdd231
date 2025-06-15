@@ -373,6 +373,54 @@ p {
 
 
 
+/*=======  TIP PAGE SPECIFICALLY  ========*/
+.intro-image {
+  float: right;
+  margin: 0 0 1rem 1.5rem;
+  max-width: 200px;
+}
+
+.intro-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.intro-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Hide image on small screens */
+@media screen and (max-width: 639px) {
+  .intro-image {
+    display: none;
+  }
+}
+.button-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.cta-button.small {
+  padding: 0.6rem 1.5rem;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* General Footer */
 footer {
     background-color: #6a3e24;
