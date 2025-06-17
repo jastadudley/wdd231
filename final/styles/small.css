@@ -282,7 +282,8 @@ h1, h2, h3, h4, p, .cta-button { margin-bottom:1rem; }
 .tip-text      { line-height: inherit; }
 .hidden        { display: none; } 
 
-
+:is(article, section, nav, aside) h1 { line-height: inherit; } 
+.tip-text { margin-bottom: 1rem; }  
 
 
 
