@@ -28,26 +28,6 @@ a { text-decoration: none; }
   z-index:2;
 }
 
-/* ---- Leaf helper classes (15 total) ---- */
-.left-2  { left: 2%; }
-.left-13 { left:13%; }
-.left-20 { left:20%; }
-.left-22 { left:22%; }
-.left-75 { left:75%; }
-.left-80 { left:80%; }
-.left-88 { left:88%; }
-.left-95 { left:95%; }
-
-.delay-3  { animation-delay:3s; }
-.delay-5  { animation-delay:5s; }
-.delay-6  { animation-delay:6s; }
-.delay-8  { animation-delay:8s; }
-.delay-10 { animation-delay:10s; }
-.delay-13 { animation-delay:13s; }
-.delay-16 { animation-delay:16s; }
-
-
-
 /* — Nav — */
 nav {
   position:absolute; top:4rem; right:2rem;
@@ -186,58 +166,85 @@ h1, h2, h3, h4, p, .cta-button { margin-bottom:1rem; }
 
 
 
-/* — Games Page — */
-#console-select { text-align:center; margin-bottom:1.5rem; }
-.console-btn {
-  background:#fff8f1; border:2px solid #a86030;
-  padding:.5rem 1rem; margin:.25rem;
-  border-radius:4px; cursor:pointer;
-}
-.console-btn.active { background:#a86030; color:#fff; }
 
-.game-images {
-  display:flex; 
+
+/* — Games Page — */
+#console-select{
+  text-align:center;
+  margin-bottom:1.5rem;
+}
+
+.console-btn{
+  background:#fff8f1;
+  border:2px solid #a86030;
+  padding:.5rem 1rem;
+  margin:.25rem;
+  border-radius:4px;
+  cursor:pointer;
+}
+
+.console-btn.active{ background:#a86030; color:#fff; }
+
+/* container that flex-wraps the two images */
+.game-images{
+  display:flex;
   flex-wrap:wrap;
-  justify-content:center; 
+  justify-content:center;
   gap:1rem;
   margin-top:1rem;
 }
-.game-img{
-  flex: 1 1 48%;
-  max-width:450px;
-  width:100%;
+
+/* BOTH images inserted by JS share these rules */
+.gameplay-img,
+.cover-art{
+  flex:0 0 48%;          /* exactly 48 % of the row on desktop  */
+  width:48%;
   border-radius:6px;
   box-shadow:0 4px 8px rgba(0,0,0,0.1);
   object-fit:cover;
   transition:transform .3s, box-shadow .3s;
 }
-@media (max-width:639px){
-  .game-img{ flex:1 0 100%; }
+
+/* collapse to single column on mobile */
+@media(max-width:639px){
+  .gameplay-img,
+  .cover-art{
+    flex:1 0 100%;
+    width:100%;
+  }
 }
-.game-img:hover{
+
+/* zoom-hover */
+.gameplay-img:hover,
+.cover-art:hover{
   transform:scale(1.05);
   box-shadow:0 6px 12px rgba(0,0,0,0.2);
 }
 
-.game-card {
-  background-color: #fff8f1;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  margin: 2rem auto;
-  max-width: 800px;
+/* card shell */
+.game-card{
+  background:#fff8f1;
+  padding:2rem;
+  border-radius:12px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.08);
+  margin:2rem auto;
+  max-width:800px;
 }
 
-.game-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+.game-info{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
 }
 
-.game-info .cta-button {
-  margin-top: 1rem;
-}
+.game-info .cta-button{ margin-top:1rem; }
+
+
+
+
+
+
 
 
 
