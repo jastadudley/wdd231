@@ -91,7 +91,13 @@ nav a:hover { color:#ffdbb5; transform:scale(1.05); }
     color: #fff8f1;
     cursor: pointer;
   }
-  
+
+}
+
+@media (min-width:640px){
+  .mobile-header{ 
+      display:none !important;
+  }
 }
 
 
@@ -164,6 +170,14 @@ h1, h2, h3, h4, p, .cta-button { margin-bottom:1rem; }
   border:none; border-radius:4px;
 }
 .carousel-btn:hover { background:rgba(91,60,36,1); }
+
+
+.carousel-btn.prev,
+.carousel-btn.next { margin: 0; /* audit-hook*/ }
+
+
+
+
 
 /* — Games Page — */
 #console-select { text-align:center; margin-bottom:1.5rem; }
@@ -308,6 +322,33 @@ h1, h2, h3, h4, p, .cta-button { margin-bottom:1rem; }
 #feedback input, #feedback textarea {
   margin-bottom: 1rem;
 }
+
+#feedback label{
+  display:block;
+  font-weight:bold;
+  margin:0.5rem 0 0.25rem;
+}
+
+#feedback input,
+#feedback textarea{
+  width:100%;
+  padding:0.6rem;
+  border:2px solid #a86030;
+  border-radius:4px;
+  font-family:inherit;
+}
+
+#feedback textarea{ min-height:120px; resize:vertical; }
+
+#feedback button{ 
+  display:block;
+  width:100%;
+  max-width:220px;
+  margin:1rem auto 0;
+}
+
+
+
 
 
 
