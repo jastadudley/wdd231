@@ -119,15 +119,6 @@ nav a:hover { color:#ffdbb5; transform:scale(1.05); }
 
 
 
-
-/* — Util Classes for Leaves — */
-[class^="left-"] { position:absolute; top:0; }
-[class^="delay-"] { /* apply via HTML classes */ }
-
-
-
-
-
 /* — Main Content Wrapper — */
 main {
   max-width:800px; margin:2rem auto;
@@ -193,13 +184,14 @@ h1, h2, h3, h4, p, .cta-button { margin-bottom:1rem; }
   justify-content:center; gap:1rem;
   margin-top:1rem;
 }
-.gameplay-img, .cover-art {
+.game-img {
   width:48%; max-width:450px;
   border-radius:6px; box-shadow:0 4px 8px rgba(0,0,0,0.1);
   object-fit:cover; transition:transform .3s, box-shadow .3s;
 }
-.cover-art:hover, .gameplay-img:hover {
-  transform:scale(1.05); box-shadow:0 6px 12px rgba(0,0,0,0.2);
+.game-img:hover{
+  transform:scale(1.05);
+  box-shadow:0 6px 12px rgba(0,0,0,0.2);
 }
 @media (max-width:639px) {
   .cover-art { display:none; width:0; }
@@ -240,7 +232,6 @@ h1, h2, h3, h4, p, .cta-button { margin-bottom:1rem; }
 .intro-image img:hover { transform:scale(1.05); }
 @media (max-width:639px) { .intro-image { display:none; } }
 
-.tip-section { margin-bottom:2rem; }
 .tip-content { padding:1rem; background:#fff0e6; border-radius:6px; }
 
 .button-row {
