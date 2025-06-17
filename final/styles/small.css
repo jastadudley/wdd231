@@ -146,10 +146,16 @@ h1, h2, h3, h4, p, .cta-button { margin-bottom:1rem; }
 .award-carousel { overflow:hidden; position:relative; margin:2rem 0; }
 .carousel-wrapper { display:flex; align-items:center; }
 .carousel-container { flex:1; overflow:hidden; }
-.carousel-track { display:flex; transition:transform .6s ease; }
+.carousel-track { 
+  display:flex; 
+  transition:transform .6s ease; 
+}
 .carousel-track img {
-  width:calc(50% - .5rem); margin-right:1rem;
-  border-radius:6px; box-shadow:0 4px 8px rgba(0,0,0,0.1);
+  width:calc(50% - .5rem); 
+  margin-right:1rem;
+  height:auto;   
+  border-radius:6px; 
+  box-shadow:0 4px 8px rgba(0,0,0,0.1);
 }
 .carousel-btn {
   background:rgba(91,60,36,0.8); color:#fff8f1;
@@ -284,10 +290,6 @@ h1, h2, h3, h4, p, .cta-button { margin-bottom:1rem; }
 
 :is(article, section, nav, aside) h1 { line-height: inherit; } 
 .tip-text { margin-bottom: 1rem; }  
-:is(article, section, nav, aside) > h1{
-  line-height: inherit;
-  font-size: 2rem;
-}
 
 
 
@@ -379,7 +381,10 @@ h1, h2, h3, h4, p, .cta-button { margin-bottom:1rem; }
 
 
 
-
+:is(article, section, nav, aside) > h1{
+  line-height: inherit;
+  font-size: 2rem;
+}
 
 
 /* — Footer — */
@@ -392,6 +397,7 @@ footer a {
   color:#ffb347; font-weight:bold;
 }
 footer a:hover { color:#ffc98b; text-decoration:underline; }
+
 
 /* ---- Leaf helper ---- */
 .left-2  { left: 2%; }
