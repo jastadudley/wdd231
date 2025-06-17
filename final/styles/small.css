@@ -28,7 +28,23 @@ a { text-decoration: none; }
   z-index:2;
 }
 
+/* ---- Leaf helper classes (15 total) ---- */
+.left-2  { left: 2%; }
+.left-13 { left:13%; }
+.left-20 { left:20%; }
+.left-22 { left:22%; }
+.left-75 { left:75%; }
+.left-80 { left:80%; }
+.left-88 { left:88%; }
+.left-95 { left:95%; }
 
+.delay-3  { animation-delay:3s; }
+.delay-5  { animation-delay:5s; }
+.delay-6  { animation-delay:6s; }
+.delay-8  { animation-delay:8s; }
+.delay-10 { animation-delay:10s; }
+.delay-13 { animation-delay:13s; }
+.delay-16 { animation-delay:16s; }
 
 
 
@@ -180,23 +196,29 @@ h1, h2, h3, h4, p, .cta-button { margin-bottom:1rem; }
 .console-btn.active { background:#a86030; color:#fff; }
 
 .game-images {
-  display:flex; flex-wrap:wrap;
-  justify-content:center; gap:1rem;
+  display:flex; 
+  flex-wrap:wrap;
+  justify-content:center; 
+  gap:1rem;
   margin-top:1rem;
 }
-.game-img {
-  width:48%; max-width:450px;
-  border-radius:6px; box-shadow:0 4px 8px rgba(0,0,0,0.1);
-  object-fit:cover; transition:transform .3s, box-shadow .3s;
+.game-img{
+  flex: 1 1 48%;
+  max-width:450px;
+  width:100%;
+  border-radius:6px;
+  box-shadow:0 4px 8px rgba(0,0,0,0.1);
+  object-fit:cover;
+  transition:transform .3s, box-shadow .3s;
+}
+@media (max-width:639px){
+  .game-img{ flex:1 0 100%; }
 }
 .game-img:hover{
   transform:scale(1.05);
   box-shadow:0 6px 12px rgba(0,0,0,0.2);
 }
-@media (max-width:639px) {
-  .cover-art { display:none; width:0; }
-  .gameplay-img { width:100%; }
-}
+
 .game-card {
   background-color: #fff8f1;
   padding: 2rem;
@@ -354,3 +376,22 @@ footer a {
   color:#ffb347; font-weight:bold;
 }
 footer a:hover { color:#ffc98b; text-decoration:underline; }
+
+/* ---- Leaf helper ---- */
+.left-2  { left: 2%; }
+.left-13 { left:13%; }
+.left-20 { left:20%; }
+.left-22 { left:22%; }
+.left-75 { left:75%; }
+.left-80 { left:80%; }
+.left-88 { left:88%; }
+.left-95 { left:95%; }
+
+.delay-3  { animation-delay:3s; }
+.delay-5  { animation-delay:5s; }
+.delay-6  { animation-delay:6s; }
+.delay-8  { animation-delay:8s; }
+.delay-9  { animation-delay:9s; }
+.delay-10 { animation-delay:10s; }
+.delay-13 { animation-delay:13s; }
+.delay-16 { animation-delay:16s; }
