@@ -1,5 +1,12 @@
 h1 { font-size: 2rem; line-height: inherit; }
 
+:is(section, article, aside, nav) > h1 {
+  font-size: 2rem !important;
+}
+.heading-fix {
+  font-size: 2rem;
+}
+
 
 
 /* — Global Reset + Base Styles — */
@@ -31,7 +38,6 @@ a { text-decoration: none; }
   text-shadow:2px 2px 8px rgba(0,0,0,0.5);
   z-index:2;
 }
-section > h1 { font-size: 2rem; }
 
 /* — Nav — */
 nav {
@@ -45,7 +51,6 @@ nav {
 nav ul { display:flex; gap:1rem; list-style:none; }
 nav a { color:#fff8f1; font-weight:bold; transition:transform .2s,color .2s; }
 
-nav a:hover { color:#ffdbb5; transform:scale(1.05); }
 
 .mobile-header {
     display: none;
