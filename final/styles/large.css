@@ -24,7 +24,10 @@ nav:hover {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-:is(article, section, nav, aside) > h1{
+section > h1,
+article > h1,
+nav > h1,
+aside > h1 {
+  font-size: 2rem;
   line-height: inherit;
-  font-size: 2rem!important;
 }
