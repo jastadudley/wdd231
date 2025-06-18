@@ -1,0 +1,100 @@
+[
+  {
+    "type": "entertainment",
+    "name": "Attend a football game at ASU",
+    "image": "images/asu-game.webp",
+    "address": "500 E Veterans Way, Tempe, AZ 85281",
+    "description": "Catch an ASU Sun Devils football game at Mountain America Stadium, then stroll around campus and explore the shops and cafés on Mill Avenue."
+  },
+  {
+    "type": "entertainment",
+    "name": "Phoenix Art Museum & Japanese Friendship Garden",
+    "image": "images/phoenix-art-museum.webp",
+    "address": "1625 N Central Ave, Phoenix, AZ 85004",
+    "description": "Wander through one of the Southwest’s largest art museums, then find zen in the nearby Japanese Friendship Garden. Don’t skip the art district along Roosevelt Row. 'First Fridays' offer tons to do and see."
+  },
+  {
+    "type": "entertainment",
+    "name": "Grand Canyon",
+    "image": "images/grand-canyon.webp",
+    "address": "Grand Canyon National Park, AZ 86023",
+    "description": "Explore a Wonder of the Natural World, right here in Arizona. The Grand Canyon offers rich history, dining, and entertainment onsite. If you're up for it, hike a bit into Bright Angel Point for epic views."
+  },
+  {
+    "type": "entertainment",
+    "name": "Phoenix Botanical Garden or Zoo in Papago Park",
+    "image": "images/papago-zoo.webp",
+    "address": "625 N Galvin Pkwy, Phoenix, AZ 85008",
+    "description": "Reconnect with your inner child among desert flora and wildlife; Papago Park is named after the edible wildflower—you’ll find plenty to wonder at!"
+  },
+  {
+    "type": "entertainment",
+    "name": "Sedona – Red Rocks & Spirit Vortexes",
+    "image": "images/sedona.webp",
+    "address": "Sedona, AZ 86336",
+    "description": "One of the most charming towns set with the backdrop of famouse red-rock mountains.Marvel at Cathedral Rock or Devil's Bridge on a sunset hike, visiters travel for and wide for our natural spirit vortexes. Browse artsy shops, food, and years if natural history. Check out Slide Rock for a whole water paer- built by nature!"
+  },
+  {
+    "type": "entertainment",
+    "name": "Lost Dutchman State Park",
+    "image": "images/lost-dutchman.webp",
+    "address": "6109 N Apache Trail, Apache Junction, AZ 85119",
+    "description": "Visit the famouse ghost town and saloon at night. Join a ghost tour or skip the fear and wait for the stunning sunrise over the Superstiation Mountains. Hike Flatiron for skyline views or Praying Hands at sunrise—keep an eye out for legendary lost gold!"
+  },
+  {
+    "type": "entertainment",
+    "name": "Scottsdale Fashion Square",
+    "image": "images/scottsdale-fashion.webp",
+    "address": "7014 E Camelback Rd, Scottsdale, AZ 85251",
+    "description": "Shop high-end fashion and enjoy dining right in the heart of Scottsdale’s stylish downtown."
+  },
+  {
+    "type": "dining",
+    "name": "Taco Boys",
+    "image": "images/taco-boys.webp",
+    "address": "1015 S Rural Rd, Tempe, AZ 85281",
+    "description": "Authentic and fun tacos right on ASU’s famous campus—perfect after a game or late-night study session."
+  },
+  {
+    "type": "dining",
+    "name": "DARUMA Sushi & Sake",
+    "image": "images/daruma.webp",
+    "address": "2075 N Dobson Rd, Chandler, AZ 85224",
+    "description": "All-you-can-eat sushi and sake served fresh with a vibrant, modern flair."
+  },
+  {
+    "type": "dining",
+    "name": "Grimaldi’s Pizza",
+    "image": "images/grimaldis.webp",
+    "address": "2168 E Williams Field Rd #102, Gilbert, AZ 85295",
+    "description": "New York-style pizza so good, it’ll convert the non-believers. Real crust, real cheese, real attitude."
+  },
+  {
+    "type": "dining",
+    "name": "Agritopia",
+    "image": "images/agritopia.webp",
+    "address": "3000 E Ray Rd, Gilbert, AZ 85296",
+    "description": "A local food hub offering farm-grown meals from multiple eateries. Organic, fresh, and community-driven."
+  },
+  {
+    "type": "dining",
+    "name": "The Coffee Builders",
+    "image": "images/coffee-builders.webp",
+    "address": "420 S Mill Ave, Tempe, AZ 85281",
+    "description": "Coffee meets fine dining—each cup is crafted like a plated work of art in this cozy but elevated cafe."
+  },
+  {
+    "type": "dining",
+    "name": "Elements at Sanctuary Camelback",
+    "image": "images/elements.webp",
+    "address": "5700 E McDonald Dr, Paradise Valley, AZ 85253",
+    "description": "Dine above the desert with a panoramic sunset view. This upscale restaurant is pure Arizona elegance."
+  },
+  {
+  "type": "dining",
+  "name": "Olive & Ivy Restaurant & Marketplace",
+  "image": "images/olive-ivy.webp",
+  "address": "7135 E Camelback Rd #195, Scottsdale, AZ 85251",
+  "description": "The ultimate brunch spot with rich espresso, an elegant menu, and a luxurious ambiance—right next to Scottsdale’s best shopping."
+}
+]

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Course WDD231 Project- Discover Phoenix and all the beauty it has to offer. The perfect place to vist on any business trip.">
+    <meta name="author" content="Jasta Dudley">
+    
+    <meta property="og:title" content="Jasta Dudley | Web Portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://jastadudley.github.io/wdd231/chamber/images/profile.jpg">
+    <meta property="og:url" content="https://jastadudley.github.io/wdd231/chamber/index.html">
+    <meta property="og:description" content="Explore the WDD231 portfolio of Jasta Dudley, featuring front-end web development projects.">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jasta Dudley | Web Portfolio">
+    <meta name="twitter:description" content="Explore the WDD231 portfolio of Jasta Dudley, featuring front-end web development projects.">
+    <meta name="twitter:image" content="https://jastadudley.github.io/wdd231/chamber/images/profile.jpg">
+    
+
+    <title>Course| Discover Phoenix</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/discover-small.css">
+    <link rel="stylesheet" href="styles/discover-medium">
+    <link rel="stylesheet" href="styles/discover-large.css" media="screen and (min-width: 640px)">    
+    <link rel="icon" href="images/favicon.ico">
+    <script src="../scripts/date.js" defer></script>
+    <script src="../scripts/course.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <link rel="preload" as="image" href="images/hero.jpg">
+  </head>
+
+  <body class="commerce">
+    <header class="site-header">
+      <div class="banner">
+        <div class="profile">
+          <img src="images/profile.jpg" alt="Jasta Dudley" width="85" height="100" loading="lazy">
+          <span>Jasta Dudley</span>
+        </div>
+        <button id="menu-button" aria-label="Toggle Navigation">☰</button>
+      </div>
+
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="chamber/index.html" class="active">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="../site-plan.html">Final OUtline</a></li>
+            <li><a href="../final/index.html">Final</a></li>
+            <li><a href="https://github.com/jastadudley">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/jasta-dudley-a7a16519a">LinkedIn</a></li>
+          </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div id="visit-message" class="visit-msg"></div>
+
+        <h2>Things to Do</h2>
+        <div id="entertainment-cards" class="card-container"></div>
+
+        <h2>Dining</h2>
+        <div id="dining-cards" class="card-container"></div>
+    </main>
+
+    <script src="scripts/discover.js"></script>
+    <script src="scripts/visit.js"></script>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Jasta Dudley, Arizona</p>
+        <p id="lastModified"></p>
+    </footer>
+
+  </body>
+</html>
